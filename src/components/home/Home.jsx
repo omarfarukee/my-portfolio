@@ -64,6 +64,20 @@ const Home = () => {
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
+
+          <div className='flex items-center justify-between mt-5'>
+            <div className=''>
+              <h1 className='text-3xl text-white'>hellon</h1>
+            </div>
+            <div className='w-2/3 text-white border-b-2'>
+                  <h1></h1>
+            </div>
+            <div className='text-3xl text-white '>
+                <h1>button</h1>
+            </div>
+          </div>
+
+
         </div>
       </div>
       <div id="animated-text" style={getAnimationStyles()}>Hi there</div>
