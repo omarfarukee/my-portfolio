@@ -33,7 +33,7 @@
     background-color: #fff;
     transform: rotate(45deg);
     opacity: 0.2;
-    animation: drop 5s ease-in-out infinite alternate;
+    animation: drop 7s ease-in-out infinite alternate;
   }
   
   .line:nth-child(1) {
@@ -79,7 +79,7 @@
   }
   
   #animated-text {
-    animation: animate-text 2s ease-in-out infinite alternate;
+    animation: animate-text 3s ease-in-out infinite alternate;
   }
   
   @keyframes separateLetters {
@@ -93,4 +93,4 @@
       letter-spacing: 0;
     }
   }
-  
+  /* ---------------------------------------------------------------------------- */
