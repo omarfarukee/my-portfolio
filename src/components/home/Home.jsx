@@ -5,7 +5,6 @@ import './Navbar.css'
 import './Home.css'
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
-import Skills from './../Skills/Skills';
 const Home = () => {
   const [animationIndex, setAnimationIndex] = useState(0);
 
@@ -40,11 +39,6 @@ const Home = () => {
         return {};
     }
   };
-
-  // const [hide, setHide] = useState('hidden')
-  // const hides = () =>{
-  //     setHide('block')
-  // }
   const [isActive, setIsActive] = useState(false);
 
   const handleToggleClick = () => {
@@ -62,48 +56,39 @@ const Home = () => {
           <div className='flex justify-between mt-5'>
 
             <div className="body">
-              {/* <div className="p-1 border rounded-lg w-11">
-                      <button className="text-4xl text-white" onClick={hides}><HiMenuAlt1></HiMenuAlt1></button>
-                      <div className={`${hide} text-white`}>
-                        <div className="flex items-center">
-                          <h1 className="items-center ml-2"><FaHome></FaHome></h1>
-                          <span className="ml-5">HOME</span>
-                        </div>
-                      </div>     
-                  </div> */}
-              <div className={`container ${isActive ? 'active' : ''} border`}>
-                <a href="#" className="togglebox" onClick={handleToggleClick}>
+              <div className={`container ${isActive ? 'active' : ''}`}>
+                <a href="#" className="mb-10 ml-1 togglebox" onClick={handleToggleClick}>
                   <span className="icon"></span>
                 </a>
-                <ul className="navItems">
-                  <li>
-                    <a href="" className="">
-                      <i className="f" style={{ '--i': 1 }}><p><FaHome></FaHome></p></i>
-                      <span className="home" style={{ '--g': 1 }}>home</span>
+                <ul className="w-14 navItems">
+                  <li className="w-full mb-8 ">
+                    <a href="" className="flex w-full h-5">
+                      <i className="pb-6 pl-4 pr-10 text-2xl " style={{ '--i': 1 }}><p><FaHome></FaHome></p></i>
+                      <span className="h-5 text-sm " style={{ '--g': 1 }}>home</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="" className="f">
-                      <i className="fa fa-home" style={{ '--i': 2 }}>##</i>
-                      <span className="home" style={{ '--g': 2 }}>Skills</span>
+                  <li className="w-full mb-8">
+                    <a href="" className="flex w-full h-5">
+                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 2 }}><p><FaHome></FaHome></p></i>
+                      <span className="h-5" style={{ '--g': 2 }}>Skills</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="" className="f">
-                      <i className="fa fa-home" style={{ '--i': 3 }}>##</i>
-                      <span className="home" style={{ '--g': 3}}>Projects</span>
+                  <li className="w-full mb-8">
+                    <a href="" className="flex w-full h-5">
+                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 3 }}><p><FaHome></FaHome></p></i>
+                      <span className="h-5" style={{ '--g': 3 }}>home</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="" className="f">
-                      <i className="fa fa-home" style={{ '--i': 4}}>##</i>
-                      <span className="home" style={{ '--g': 4}}>home</span>
+                  <li className="w-full mb-8">
+                    <a href="" className="flex w-full h-5">
+                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 4 }}><p><FaHome></FaHome></p></i>
+                      <span className="h-5" style={{ '--g': 4 }}>home</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="" className="f">
-                      <i className="fa fa-home" style={{ '--i': 5 }}>##</i>
-                      <span className="home" style={{ '--g': 5 }}>home</span>
+                  <li className="w-full mb-8">
+                    <a href="" className="flex w-full h-5">
+                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 5 }}><p><FaHome></FaHome></p></i>
+                      <span className="h-5" style={{ '--g': 5 }}>home</span>
                     </a>
                   </li>
                 </ul>
