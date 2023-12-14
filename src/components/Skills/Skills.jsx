@@ -3,8 +3,11 @@ import React from 'react';
 import './Skills.css'
 const Skills = () => {
     return (
-        <div className='skills-top'>
-            <h1 className='text-5xl'>this is my Skills</h1>
+        <div className='mb-10 skills-top skills-bg'>
+            <div className='flex justify-center pt-5'data-aos="fade-up">
+                <h1 className='text-3xl font-bold text-white'>Skills Analaysis</h1>
+            </div>
+
         </div>
     );
 };
