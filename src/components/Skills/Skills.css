@@ -5,3 +5,78 @@
     background-color: #1c1c1c;
     height: 100vh;
 }
+.skill-container .card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.skill-container .card .percent svg{
+    transform: rotate(270deg);
+    width: 150px;
+    height: 150px;
+}
+.skill-container .card .percent svg circle{
+   width: 100%;
+   height: 100%;
+   fill: transparent;
+   stroke-width: 2;
+   stroke: #000000;
+   transform: translate(5px, 5px);
+}
+.skill-container .card .percent svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+}
+/* .dot{
+    position:absolute;
+    z-index: 10;
+    inset: 5px;
+    animation: animate 2s linear forwards;
+} */
+.dot {
+    position: absolute;
+    z-index: 10;
+    inset: 5px;
+    transform: rotate(0deg);
+    opacity: 0; 
+    transition: opacity 0.5s;
+    animation: animate 2s linear forwards;
+  }
+  
+  .dot.animate {
+    opacity: 1;
+  }
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+  
+.dot:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX();
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:var(--clr);
+    box-shadow:0 0 10px var(--clr),
+    0 0 30px var(--clr);
+
+}
+
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff
+}
