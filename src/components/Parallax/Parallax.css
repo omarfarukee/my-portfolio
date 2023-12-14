@@ -1,0 +1,28 @@
+.tops{
+    top:571px;
+}
+.name{
+    
+    margin-left:50%;
+    margin-top:40%;
+}
+.h2{
+    text-transform: uppercase;
+}
+.h2 span{
+    transition: 0.5s;
+}
+.h2:hover span:nth-child(1){
+ margin-right: 10px;
+}
+.h2:hover span:nth-child(2){
+ margin-left: 20px;
+}
+.h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+    0 0 40px #fff,
+    0 0 40px #fff,
+    0 0 40px #fff,
+    0 0 60px #fff          ;
+}

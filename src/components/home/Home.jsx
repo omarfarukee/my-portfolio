@@ -13,6 +13,9 @@ import './Navbar.css'
 import './Home.css'
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
+import Parallax from "../Parallax/Parallax";
+import Skills from './../Skills/Skills';
+import Projects from "../Projects/Projects";
 const Home = () => {
   useEffect(() =>{
     AOS.init({duration: 2000});
@@ -87,7 +90,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="w-full mb-8">
-                    <a href="" className="flex w-full h-5">
+                    <a href="#skills" className="flex w-full h-5">
                       <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 2 }}><p><GiSkills />
                       </p></i>
                       <span className="h-5 text-sm" style={{ '--g': 2 }}>Skills</span>
@@ -132,6 +135,15 @@ const Home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="300"
      data-aos-offset="0" id="animated-text" style={getAnimationStyles()}>Hi there</div>
+     <div className="hidden lg:block">
+      <Parallax></Parallax>
+     </div>
+     <div id="skills">
+        <Skills></Skills>
+     </div>
+     <div>
+      <Projects></Projects>
+     </div>
     </div>
   );
 };
