@@ -27,26 +27,26 @@
   stroke: var(--clr);
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 0;
+  animation: fadein 1s linear forwards;
+  animation-delay: 2.5s;
 }
-/* .dot{
+@keyframes fadein{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.dot{
     position:absolute;
     z-index: 10;
     inset: 5px;
     animation: animate 2s linear forwards;
-} */
-.dot {
-    position: absolute;
-    z-index: 10;
-    inset: 5px;
-    transform: rotate(0deg);
-    opacity: 0; 
-    transition: opacity 0.5s;
-    animation: animate 2s linear forwards;
-  }
+}
   
-  .dot.animate {
-    opacity: 1;
-  }
 @keyframes animate{
     0%{
         transform: rotate(0deg);
@@ -78,5 +78,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:#fff
+    color:#fff;
+    opacity: 0;
+    animation: fadein 1s linear forwards;
+    animation-delay: 2.5s;
 }
