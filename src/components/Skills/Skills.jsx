@@ -3,8 +3,22 @@
 import React, { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './Skills.css';
+import html from '../../assets/skills/pngwing.com.png'
+import css from '../../assets/skills/css.png'
+import boot from '../../assets/skills/boot.png'
+import tailwind from '../../assets/skills/Tailwind-img.png'
+import js from '../../assets/skills/js.png'
+import fire from '../../assets/skills/fire.png'
+import reacts from '../../assets/skills/react.png'
+import typescript from '../../assets/skills/types.png'
+import node from '../../assets/skills/node.png'
+import express from '../../assets/skills/express.png'
+import mongodb from '../../assets/skills/mongodb-logo.png'
+import mongoo from '../../assets/skills/mongoose5_62x30_transparent.png'
+import nexts from '../../assets/skills/next.jpg'
+import dom from '../../assets/skills/dom-removebg-preview.png'
 
-const SkillCard = ({ color, percentage, skillName }) => {
+const SkillCard = ({ color, percentage, image, skillName }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -18,8 +32,12 @@ const SkillCard = ({ color, percentage, skillName }) => {
           <circle cx={"70"} cy={"70"} r={'70'}></circle>
         </svg>
         <div className='number'>
-          <h2>{percentage} <span>%</span></h2>
+           
+          <img className='w-12' src={image} alt="" />
           <p>{skillName}</p>
+          <h2>{percentage} <span>%</span></h2>
+         
+
         </div>
       </div>
     </div>
@@ -32,12 +50,30 @@ const Skills = () => {
       <div className='flex justify-center pt-5' data-aos="fade-up">
         <h1 className='text-3xl font-bold text-white'>Skills Analysis</h1>
       </div>
-      <div className='flex justify-center gap-5 mt-10 skill-container' data-aos="fade-up">
-        <SkillCard color='#04fc42' percentage='85' skillName='HTML' />
-        <SkillCard color='#f542a1' percentage='60' skillName='CSS' />
-        <SkillCard color='#f542a1' percentage='75' skillName='js' />
-        <SkillCard color='#f542a1' percentage='95' skillName='nodejs' />
-        <SkillCard color='#f542a1' percentage='95' skillName='express js' />
+      <div className='mt-10 skill-container' data-aos="fade-up">
+        <div className='flex justify-center gap-10'>
+          <SkillCard color='#e14000' percentage='98' skillName='HTML' image={html} />
+          <SkillCard color='#595bff' percentage='90' skillName='CSS' image={css} />
+          <SkillCard color='#b583f9' percentage='92' skillName='Boostrap' image={boot} />
+          <SkillCard color='#3bb0af' percentage='90' skillName='Tailwind' image={tailwind} />
+          <SkillCard color='#fff13e' percentage='85' skillName='Java Script' image={js} />
+          <SkillCard color='#ffca28' percentage='85' skillName='Firebase' image={fire} />
+        </div>
+        <div className='flex justify-center gap-10 mt-5 mb-5'>
+          <SkillCard color='#7a78ff' percentage='85' skillName='React js' image={reacts} />
+          <SkillCard color='#8c2829' percentage='88' skillName='React Router' image={dom} />
+          <SkillCard color='#76c1e7' percentage='85' skillName='TypeScript' image={typescript} />
+          <SkillCard color='#7bb265' percentage='90' skillName='Node js' image={node} />
+          <SkillCard color='#949492' percentage='90' skillName='Express js' image={express} />
+
+
+        </div>
+        <div className='flex justify-center gap-10'>
+          <SkillCard color='#81c564' percentage='92' skillName='MongoDB' image={mongodb} />
+          <SkillCard color='#880000' percentage='80' skillName='Mongoose' image={mongoo} />
+          <SkillCard color='#d0d0d0' percentage='60' skillName='Next js' image={nexts} />
+        </div>
+
         {/* Add more SkillCard components as needed */}
       </div>
     </div>
