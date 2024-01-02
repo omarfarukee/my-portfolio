@@ -1,6 +1,7 @@
 import './Porjects.css'
 import gadget from '../../assets/image/gadget.png'
 import bike from '../../assets/image/bike.png'
+import digital from '../../assets/image/gigital.png'
 import img1 from '../../assets/project img/img1.png'
 import img2 from '../../assets/project img/img2.png'
 import img3 from '../../assets/project img/img3.png'
@@ -37,8 +38,8 @@ const Projects = () => {
                     <img src={img4} alt="" className='mt-40 p-product-img1' />
                 </div>
                 <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{'--clr':'#ffff'}}>
-                        <img src={gadget} alt="" className='w-40 p-logo' />
+                    <div className='p-circle' style={{'--clr':'#32a19f'}}>
+                        <img src={digital} alt="" className='w-40 rounded-lg p-logo' />
                     </div>
                     <div className='p-content'>
                         <h2 className='text-2xl font-bold'>Coca cola</h2>
