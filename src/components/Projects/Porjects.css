@@ -1,5 +1,6 @@
 .project-bg{
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
+    background-color: black;
     height: 100vh;
 }
 .p-card{
@@ -14,7 +15,8 @@
     transition-delay: 0.5s;
 }
 .p-card:hover{
-    width:600px;
+    width:650px;
+    height: 300px;
     transition-delay: 0.5s;
 }
 .p-card .p-circle{
@@ -70,7 +72,7 @@
 .p-card:hover .p-product-img{
     transition-delay: 0.75s;
     top:25%;
-    left:75%;
+    left:80%;
     width:300px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
@@ -85,7 +87,7 @@
 .p-card:hover .p-product-img1{
     transition-delay: 0.75s;
     top:25%;
-    left:70%;
+    left:75%;
     width:300px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
