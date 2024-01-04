@@ -16,6 +16,7 @@ import { FaHome } from "react-icons/fa";
 import Parallax from "../Parallax/Parallax";
 import Skills from './../Skills/Skills';
 import Projects from "../Projects/Projects";
+import About from "../About/About";
 const Home = () => {
   useEffect(() =>{
     AOS.init({duration: 2000});
@@ -143,6 +144,9 @@ const Home = () => {
      </div>
      <div>
       <Projects></Projects>
+     </div>
+     <div>
+      <About></About>
      </div>
     </div>
   );
