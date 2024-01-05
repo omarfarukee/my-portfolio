@@ -21,26 +21,26 @@ import { useState } from 'react'
 
 const Projects = () => {
 
-const [full, setFull] = useState('blcok')
-const [front, setFront] = useState('hidden')
-const fullStack = () =>{
-    setFront('hidden')
-    setFull('blcok')
-}
-const frontEnd = () =>{
-    setFront('blcok')
-    setFull('hidden')
-}
-const [b1,setB1] = useState('w-40 p-3 font-bold rounded-lg b1')
-const [b2,setB2] = useState('w-40 p-3  rounded-lg')
-const button1 = () =>{
-    setB2('w-40 p-3 rounded-lg')
-    setB1('w-40 p-3 font-bold rounded-lg b1')
-}
-const button2 = () =>{
-    setB2('w-40 p-3 font-bold rounded-lg b1')
-    setB1('w-40 p-3 rounded-lg')
-}
+    const [full, setFull] = useState('blcok')
+    const [front, setFront] = useState('hidden')
+    const fullStack = () => {
+        setFront('hidden')
+        setFull('blcok')
+    }
+    const frontEnd = () => {
+        setFront('blcok')
+        setFull('hidden')
+    }
+    const [b1, setB1] = useState('w-40 p-3 font-bold rounded-lg b1')
+    const [b2, setB2] = useState('w-40 p-3  rounded-lg')
+    const button1 = () => {
+        setB2('w-40 p-3 rounded-lg')
+        setB1('w-40 p-3 font-bold rounded-lg b1')
+    }
+    const button2 = () => {
+        setB2('w-40 p-3 font-bold rounded-lg b1')
+        setB1('w-40 p-3 rounded-lg')
+    }
 
     return (
         <div className='project-bg'>
@@ -49,125 +49,125 @@ const button2 = () =>{
             </div>
             <div className='flex justify-center mt-5 text-white'>
                 <div className='flex gap-6'>
-                     <button onClick={() => {fullStack(); button1()}} className={b1}>Full-Stack</button>
-                     <button onClick={()=>{frontEnd(); button2()}} className={b2}>Front-End</button>
-                </div>       
+                    <button onClick={() => { fullStack(); button1() }} className={b1}>Full-Stack</button>
+                    <button onClick={() => { frontEnd(); button2() }} className={b2}>Front-End</button>
+                </div>
             </div>
             <div className={full}>
                 <div className='flex mt-16 justify-evenly' data-aos="fade-down">
-                <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{ '--clr': '#ffff' }}>
-                        <img src={gadget} alt="" className='w-40 p-logo' />
-                    </div>
-                    <div className='p-3 border p-content'>
-                       
-                        <div className='flex gap-2 p-2 mt-5'>
-                            <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                            <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                    <div className='ml-3 p-card'>
+                        <div className='p-circle' style={{ '--clr': '#ffff' }}>
+                            <img src={gadget} alt="" className='w-40 p-logo' />
                         </div>
-                        <div className='flex justify-center'>
-                            <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
-                        </div>
-                    </div>
-                    <img src={img1} alt="" className='p-product-img' />
-                    <img src={img2} alt="" className='mt-40 p-product-img1' />
-                </div>
-                <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{ '--clr': '#16a34a' }}>
-                        <img src={bike} alt="" className='w-40 p-logo bg-slate-200 rounded-2xl' />
-                    </div>
-                    <div className='p-3 p-content'>
-                    <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
-                        <small className='text-white'>
-                            <li>• There are three types of products collection, user have 3 roles seller , buyer and admin</li>
-                            <li>• Sellers can add products. Buyers can book and pay</li>
-                            <li>• Admin can see all users and can delete user</li>
-                            <li>• Seller can advertise his new added products</li>
-                            <li>• User must be logged in</li>
-                        </small>
-                        <div className='flex gap-2 p-2 mt-5'>
-                            <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://bike-frenzy-7b4f7.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                            <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
-                        </div>
-                        <div className='flex justify-center'>
-                            <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
-                        </div>
+                        <div className='p-3 border p-content'>
 
-                    </div>
-                    <img src={img3} alt="" className='p-product-img' />
-                    <img src={img4} alt="" className='mt-40 p-product-img1' />
-                </div>
-                <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{ '--clr': '#7faa51' }}>
-                        <img src={home} alt="" className='w-40 rounded-lg p-logo' />
-                    </div>
-                    <div className='p-3 p-content'>
-                    <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
-                        <small className='text-white'>
-                            <li>• User can see the items he wants to know</li>
-                            <li>• Can review the specific item he wants to</li>
-                            <li>• User can add item</li>
-                            <li>• User should be logged in before reviewing or adding</li>
-                        </small>
-                        <div className='flex gap-2 p-2 mt-5'>
-                            <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://homes-food.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                            <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            <div className='flex gap-2 p-2 mt-5'>
+                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
+                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            </div>
+                            <div className='flex justify-center'>
+                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                            </div>
                         </div>
-                        <div className='flex justify-center'>
-                            <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
-                        </div>
+                        <img src={img1} alt="" className='p-product-img' />
+                        <img src={img2} alt="" className='mt-40 p-product-img1' />
                     </div>
-                    <img src={img5} alt="" className='p-product-img' />
-                    <img src={img6} alt="" className='mt-40 p-product-img1' />
+                    <div className='ml-3 p-card'>
+                        <div className='p-circle' style={{ '--clr': '#16a34a' }}>
+                            <img src={bike} alt="" className='w-40 p-logo bg-slate-200 rounded-2xl' />
+                        </div>
+                        <div className='p-3 p-content'>
+                            <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
+                            <small className='text-white'>
+                                <li>• There are three types of products collection, user have 3 roles seller , buyer and admin</li>
+                                <li>• Sellers can add products. Buyers can book and pay</li>
+                                <li>• Admin can see all users and can delete user</li>
+                                <li>• Seller can advertise his new added products</li>
+                                <li>• User must be logged in</li>
+                            </small>
+                            <div className='flex gap-2 p-2 mt-5'>
+                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://bike-frenzy-7b4f7.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
+                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            </div>
+                            <div className='flex justify-center'>
+                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                            </div>
+
+                        </div>
+                        <img src={img3} alt="" className='p-product-img' />
+                        <img src={img4} alt="" className='mt-40 p-product-img1' />
+                    </div>
+                    <div className='ml-3 p-card'>
+                        <div className='p-circle' style={{ '--clr': '#7faa51' }}>
+                            <img src={home} alt="" className='w-40 rounded-lg p-logo' />
+                        </div>
+                        <div className='p-3 p-content'>
+                            <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
+                            <small className='text-white'>
+                                <li>• User can see the items he wants to know</li>
+                                <li>• Can review the specific item he wants to</li>
+                                <li>• User can add item</li>
+                                <li>• User should be logged in before reviewing or adding</li>
+                            </small>
+                            <div className='flex gap-2 p-2 mt-5'>
+                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://homes-food.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
+                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            </div>
+                            <div className='flex justify-center'>
+                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                            </div>
+                        </div>
+                        <img src={img5} alt="" className='p-product-img' />
+                        <img src={img6} alt="" className='mt-40 p-product-img1' />
+                    </div>
                 </div>
-            </div>
             </div>
             <div className={front}>
-                  <div className='flex mt-16 justify-evenly'>
+                <div className='flex mt-16 justify-evenly'>
 
-            <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{ '--clr': '#b24cbf' }}>
-                        <img src={quick} alt="" className='w-40 rounded-lg p-logo' />
-                    </div>
-                    <div className='p-3 p-content'>
-                    <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
-                        <small className='text-white'>
-                            <li>• The site is comport to Visit and its UI is very <span className='ml-2'>massive .</span></li>
-                            <li>• In here we gave you Some common quiz that you <span className='ml-2'>can justify yourself in this way how you good at <span className='ml-2'>his.</span></span> </li>
-                            <li>• The site is stunning for you .</li>
-                        </small>
-                        <div className='flex gap-2 p-2 mt-5'>
-                            <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://cosmic-quick-quiz-detector-qui-55c193.netlify.app/home" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                            <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://github.com/omarfarukee/Quick-Quiz-Detector" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                    <div className='ml-3 p-card'>
+                        <div className='p-circle' style={{ '--clr': '#b24cbf' }}>
+                            <img src={quick} alt="" className='w-40 rounded-lg p-logo' />
                         </div>
-                    </div>
-                    <img src={img9} alt="" className='p-product-img' />
-                    <img src={img10} alt="" className='mt-40 p-product-img1' />
-                </div>
-            <div className='ml-3 p-card'>
-                    <div className='p-circle' style={{ '--clr': '#0dcaf0' }}>
-                        <img src={glob} alt="" className='w-40 rounded-lg p-logo' />
-                    </div>
-                    <div className='p-3 p-content'>
-                    <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
-                        <small className='text-white'>
-                            <li>• Here organized some courses based on 6 topics</li>
-                            <li>• User can see specific details about etch courses, React to PDF</li>
-                            <li>• User must logged in to see course details.</li>
-                            <li>• Dark mood light mood toggle button.</li>
-                        </small>
-                        <div className='flex gap-2 p-2 mt-5'>
-                            <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://campus-sia-396920.netlify.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                            <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://github.com/omarfarukee/campus-sia" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                        <div className='p-3 p-content'>
+                            <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
+                            <small className='text-white'>
+                                <li>• The site is comport to Visit and its UI is very <span className='ml-2'>massive .</span></li>
+                                <li>• In here we gave you Some common quiz that you <span className='ml-2'>can justify yourself in this way how you good at <span className='ml-2'>his.</span></span> </li>
+                                <li>• The site is stunning for you .</li>
+                            </small>
+                            <div className='flex gap-2 p-2 mt-5'>
+                                <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://cosmic-quick-quiz-detector-qui-55c193.netlify.app/home" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
+                                <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://github.com/omarfarukee/Quick-Quiz-Detector" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            </div>
                         </div>
-                    
+                        <img src={img9} alt="" className='p-product-img' />
+                        <img src={img10} alt="" className='mt-40 p-product-img1' />
                     </div>
-                    <img src={img11} alt="" className='p-product-img' />
-                    <img src={img12} alt="" className='mt-40 p-product-img1' />
+                    <div className='ml-3 p-card'>
+                        <div className='p-circle' style={{ '--clr': '#0dcaf0' }}>
+                            <img src={glob} alt="" className='w-40 rounded-lg p-logo' />
+                        </div>
+                        <div className='p-3 p-content'>
+                            <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
+                            <small className='text-white'>
+                                <li>• Here organized some courses based on 6 topics</li>
+                                <li>• User can see specific details about etch courses, React to PDF</li>
+                                <li>• User must logged in to see course details.</li>
+                                <li>• Dark mood light mood toggle button.</li>
+                            </small>
+                            <div className='flex gap-2 p-2 mt-5'>
+                                <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://campus-sia-396920.netlify.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
+                                <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://github.com/omarfarukee/campus-sia" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                            </div>
+
+                        </div>
+                        <img src={img11} alt="" className='p-product-img' />
+                        <img src={img12} alt="" className='mt-40 p-product-img1' />
+                    </div>
                 </div>
             </div>
-            </div>
-          
+
         </div>
     );
 };

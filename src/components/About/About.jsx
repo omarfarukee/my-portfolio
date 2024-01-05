@@ -12,9 +12,14 @@ const About = () => {
                 </div>
                 <div className="flex w-1/2">
                     <div className="p-3" data-aos="zoom-in-right">
-                        <div className="p-5 ml-16 rounded-lg bg-slate-700 h-60"
+                        <div className="a-box"
                         >
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                            <span></span>
+                            <div className='p-5 a-content h-60'>
+                                <h1>hello</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -33,9 +38,12 @@ const About = () => {
                     <div className="flex justify-end">
                         <div className="a-border h-96" data-aos="fade-up"></div>
                         <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
-                            <p className="p-5 rounded-lg h-60 bg-slate-800 ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
+                            <div className="p-5 rounded-lg h-60 bg-slate-800 ">
+                                <h1 className='text-2xl'>hello</h1>
+                               <p>
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
                             </p>
+                            </div>
                         </div>
                     </div>
                </div>
@@ -69,9 +77,12 @@ const About = () => {
                     <div className="flex justify-end">
                         <div className="a-border h-96" data-aos="fade-up"></div>
                         <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
-                            <p className="p-5 rounded-lg h-60 bg-slate-800 ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
+                            <div className="p-5 rounded-lg h-60 bg-slate-800 ">
+                                <h1 className='text-2xl'>hello</h1>
+                               <p>
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
                             </p>
+                            </div>
                         </div>
                     </div>
                </div>
