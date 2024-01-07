@@ -47,7 +47,7 @@ const About = () => {
                 <div className="">
                     <div className="flex justify-end ">
                         <div className='mr-52' data-aos="zoom-in-right">
-                            <img src={education} className='w-52 moving-image' alt="" />
+                            <img src={education} className='w-80 moving-image' alt="" />
                         </div>
                         <div className=" a-border h-96" data-aos="fade-up"></div>
                         <div className="pt-2 pl-3 pr-5 rounded-lg widths" data-aos="zoom-in-left">
