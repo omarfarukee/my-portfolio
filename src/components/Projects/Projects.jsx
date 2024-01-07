@@ -59,9 +59,18 @@ const Projects = () => {
                         <div className='p-circle' style={{ '--clr': '#ffff' }}>
                             <img src={gadget} alt="" className='w-40 p-logo' />
                         </div>
-                        <div className='p-3 border p-content'>
+                        <div className='p-3 p-content'>
+                        <h1 className='flex justify-center text-2xl font-bold '>Features</h1>
+                            <small className=''>
+                                <li>• Categorization and filtering options for streamlined navigation</li>
+                                <li>• Admin capabilities for adding, updating, and deleting products</li>
+                                <li>• Admin capabilities for adding, updating, and deleting products</li>
+                                <li>• Inclusion of a review system for buyers to share feedback.Multiple payment choices, including credit/debit cards, for flexibility.</li>
+                              
+                    
 
-                            <div className='flex gap-2 p-2 mt-5'>
+                            </small>
+                            <div className='flex gap-2 p-2'>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
@@ -151,10 +160,8 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                             <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
                             <small className='text-white'>
-                                <li>• Here organized some courses based on 6 topics</li>
-                                <li>• User can see specific details about etch courses, React to PDF</li>
-                                <li>• User must logged in to see course details.</li>
-                                <li>• Dark mood light mood toggle button.</li>
+                                <li>• Its a one landig page design</li>
+                               
                             </small>
                             <div className='flex gap-2 p-2 mt-5'>
                                 <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://campus-sia-396920.netlify.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>

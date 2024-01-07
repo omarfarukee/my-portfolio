@@ -23,7 +23,7 @@ const About = () => {
                             <span></span>
                             <div className='p-5 a-content h-60'>
                                 <h1 className='text-3xl'><FaHome></FaHome></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratio.</p>
+                                <p>Hailing from the bustling city of Dhaka in Bangladesh, I am a 22-year-old individual with roots in the picturesque district of Gazipur. Currently residing in Dhaka, this city not only represents my present but also holds the key to my past and future. It is within these lively streets that I have grown up, surrounded by the rich cultural tapestry of Bangladesh, shaping the person I am today.</p>
                             </div>
                             
                         </div>
