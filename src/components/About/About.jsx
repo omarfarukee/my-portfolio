@@ -1,4 +1,5 @@
-
+import home from '../../assets/about-img/home.png'
+import education from '../../assets/about-img/education.png'
 import './About.css'
 const About = () => {
     return (
@@ -10,9 +11,9 @@ const About = () => {
                 <div className="flex justify-end w-3/5 mb-2 padding">
                     <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">1</h1>
                 </div>
-                <div className="flex w-1/2">
-                    <div className="p-3" data-aos="zoom-in-right">
-                        <div className="a-box"
+                <div className="flex pt-2">
+                    <div className="w-1/2 p-3" data-aos="zoom-in-right">
+                        <div className="a-box a-color-box"
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
@@ -26,6 +27,9 @@ const About = () => {
                     <div className="a-border h-96" data-aos="fade-up">
 
                     </div>
+                    <div className='flex justify-center w-1/2 text-white'>
+                        <img className=' w-72 h-72 moving-image' src={home} alt="" data-aos="fade-right"/>
+                    </div>
                 </div>
             </div>
 
@@ -35,15 +39,21 @@ const About = () => {
                    
                 </div>
                <div className="">
-                    <div className="flex justify-end">
+                    <div className="flex justify-end ">
+                        <div className='mr-52'  data-aos="fade-up">
+                            <img src={education} className='w-52 moving-image' alt="" />
+                        </div>
                         <div className="a-border h-96" data-aos="fade-up"></div>
                         <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
-                            <div className="p-5 rounded-lg h-60 bg-slate-800 ">
-                                <h1 className='text-2xl'>hello</h1>
-                               <p>
-                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
-                            </p>
+                        <div className="a-box b-color-box"
+                        >
+                            <span></span>
+                            <div className='p-5 a-content h-60'>
+                                <h1>hello</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
                             </div>
+                            
+                        </div>
                         </div>
                     </div>
                </div>
@@ -52,18 +62,26 @@ const About = () => {
 
             <div>
                 <div className="flex justify-end w-3/5 mb-2 padding">
-                    <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">3</h1>
+                    <h1 className="w-10 p-2 mt-3 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">3</h1>
                 </div>
-                <div className="flex w-1/2">
-                    <div className="p-3" data-aos="zoom-in-right">
-                        <div className="p-5 ml-16 rounded-lg bg-slate-700 h-60"
+                <div className="flex pt-2">
+                    <div className="w-1/2 p-3" data-aos="zoom-in-right">
+                        <div className="a-box c-color-box"
                         >
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                            <span></span>
+                            <div className='p-5 a-content h-60'>
+                                <h1>hello</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                            </div>
+                            
                         </div>
                     </div>
 
                     <div className="a-border h-96" data-aos="fade-up">
 
+                    </div>
+                    <div className='flex justify-center w-1/2 text-white'>
+                        <img className=' w-72 h-72 moving-image' src={home} alt="" data-aos="fade-right"/>
                     </div>
                 </div>
             </div>
@@ -73,16 +91,22 @@ const About = () => {
                     <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">4</h1>
                    
                 </div>
-               <div className="">
-                    <div className="flex justify-end">
+                <div className="">
+                    <div className="flex justify-end ">
+                        <div className='mr-52'  data-aos="fade-up">
+                            <img src={education} className='w-52 moving-image' alt="" />
+                        </div>
                         <div className="a-border h-96" data-aos="fade-up"></div>
                         <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
-                            <div className="p-5 rounded-lg h-60 bg-slate-800 ">
-                                <h1 className='text-2xl'>hello</h1>
-                               <p>
-                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorum pariatur in harum ipsam numquam quos ratione. Pariatur fuga consequatur ipsa non. Enim dolore corporis earum tenetur delectus, sequi hic eveniet! Nihil facere excepturi eius officiis. Ut optio magnam inventore quasi assumenda. Saepe veritatis beatae velit, nemo nobis voluptate tempora!
-                            </p>
+                        <div className="a-box d-color-box"
+                        >
+                            <span></span>
+                            <div className='p-5 a-content h-60'>
+                                <h1>hello</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
                             </div>
+                            
+                        </div>
                         </div>
                     </div>
                </div>
