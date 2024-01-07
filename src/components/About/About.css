@@ -8,9 +8,12 @@
 .padding{
     padding-right: 115px;
 }
+.widths{
+    width: 49.8%;
+}
 .a-box{
     position: relative;
-    width:100%;
+    width:90%;
     color: #ffff;
 }
 .a-color-box::before{

@@ -11,9 +11,9 @@ const About = () => {
                 <div className="flex justify-end w-3/5 mb-2 padding">
                     <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">1</h1>
                 </div>
-                <div className="flex pt-2">
+                <div className="flex pt-2 ">
                     <div className="w-1/2 p-3" data-aos="zoom-in-right">
-                        <div className="a-box a-color-box"
+                        <div className="ml-16 a-box a-color-box"
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
@@ -28,7 +28,7 @@ const About = () => {
 
                     </div>
                     <div className='flex justify-center w-1/2 text-white'>
-                        <img className=' w-72 h-72 moving-image' src={home} alt="" data-aos="fade-right"/>
+                        <img className=' w-72 h-72 moving-image' src={home} alt="" />
                     </div>
                 </div>
             </div>
@@ -43,8 +43,8 @@ const About = () => {
                         <div className='mr-52'  data-aos="fade-up">
                             <img src={education} className='w-52 moving-image' alt="" />
                         </div>
-                        <div className="a-border h-96" data-aos="fade-up"></div>
-                        <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
+                        <div className=" a-border h-96" data-aos="fade-up"></div>
+                        <div className="pt-2 pl-3 pr-5 rounded-lg widths" data-aos="zoom-in-left">
                         <div className="a-box b-color-box"
                         >
                             <span></span>
@@ -66,7 +66,7 @@ const About = () => {
                 </div>
                 <div className="flex pt-2">
                     <div className="w-1/2 p-3" data-aos="zoom-in-right">
-                        <div className="a-box c-color-box"
+                        <div className="ml-16 a-box c-color-box"
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
@@ -81,7 +81,7 @@ const About = () => {
 
                     </div>
                     <div className='flex justify-center w-1/2 text-white'>
-                        <img className=' w-72 h-72 moving-image' src={home} alt="" data-aos="fade-right"/>
+                        <img className=' w-72 h-72 moving-image' src={home} alt=""/>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@ const About = () => {
                             <img src={education} className='w-52 moving-image' alt="" />
                         </div>
                         <div className="a-border h-96" data-aos="fade-up"></div>
-                        <div className="w-1/2 pt-2 pl-3 pr-16 rounded-lg" data-aos="zoom-in-left">
+                        <div className="pt-2 pl-3 pr-5 rounded-lg widths" data-aos="zoom-in-left">
                         <div className="a-box d-color-box"
                         >
                             <span></span>
