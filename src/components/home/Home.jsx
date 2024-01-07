@@ -98,13 +98,13 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="w-full mb-8">
-                    <a href="" className="flex w-full h-5">
+                    <a href="#projects" className="flex w-full h-5">
                       <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 3 }}><p><GoProject /></p></i>
                       <span className="h-5 text-sm" style={{ '--g': 3 }}>Projects</span>
                     </a>
                   </li>
                   <li className="w-full mb-8">
-                    <a href="" className="flex w-full h-5">
+                    <a href="#about" className="flex w-full h-5">
                       <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 4 }}><p><BiSolidUserPin /></p></i>
                       <span className="h-5 text-sm" style={{ '--g': 4 }}>About</span>
                     </a>
@@ -142,10 +142,10 @@ const Home = () => {
      <div id="skills">
         <Skills></Skills>
      </div>
-     <div>
+     <div id="projects">
       <Projects></Projects>
      </div>
-     <div>
+     <div id="about">
       <About></About>
      </div>
     </div>

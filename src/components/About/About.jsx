@@ -1,6 +1,11 @@
 import home from '../../assets/about-img/home.png'
 import education from '../../assets/about-img/education.png'
+import experience from '../../assets/about-img/experinec.png'
+import hobby from '../../assets/about-img/hobby.png'
+import { FaUserGraduate } from "react-icons/fa6";
+
 import './About.css'
+import { FaHome } from 'react-icons/fa';
 const About = () => {
     return (
         <div className="pb-10 a-back">
@@ -17,8 +22,8 @@ const About = () => {
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
-                                <h1>hello</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                                <h1 className='text-3xl'><FaHome></FaHome></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratio.</p>
                             </div>
                             
                         </div>
@@ -27,7 +32,7 @@ const About = () => {
                     <div className="a-border h-96" data-aos="fade-up">
 
                     </div>
-                    <div className='flex justify-center w-1/2 text-white'>
+                    <div className='flex justify-center w-1/2 text-white' data-aos="zoom-in-left">
                         <img className=' w-72 h-72 moving-image' src={home} alt="" />
                     </div>
                 </div>
@@ -40,7 +45,7 @@ const About = () => {
                 </div>
                <div className="">
                     <div className="flex justify-end ">
-                        <div className='mr-52'  data-aos="fade-up">
+                        <div className='mr-52'  data-aos="zoom-in-right">
                             <img src={education} className='w-52 moving-image' alt="" />
                         </div>
                         <div className=" a-border h-96" data-aos="fade-up"></div>
@@ -49,7 +54,7 @@ const About = () => {
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
-                                <h1>hello</h1>
+                                <h1 className='text-3xl'><FaUserGraduate /></h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
                             </div>
                             
@@ -80,8 +85,8 @@ const About = () => {
                     <div className="a-border h-96" data-aos="fade-up">
 
                     </div>
-                    <div className='flex justify-center w-1/2 text-white'>
-                        <img className=' w-72 h-72 moving-image' src={home} alt=""/>
+                    <div className='flex justify-center w-1/2 text-white'data-aos="zoom-in-left">
+                        <img className=' w-96 h-72 moving-image' src={hobby} alt=""/>
                     </div>
                 </div>
             </div>
@@ -93,8 +98,8 @@ const About = () => {
                 </div>
                 <div className="">
                     <div className="flex justify-end ">
-                        <div className='mr-52'  data-aos="fade-up">
-                            <img src={education} className='w-52 moving-image' alt="" />
+                        <div className='mr-52'  data-aos="zoom-in-right">
+                            <img src={experience} className='w-80 moving-image' alt="" />
                         </div>
                         <div className="a-border h-96" data-aos="fade-up"></div>
                         <div className="pt-2 pl-3 pr-5 rounded-lg widths" data-aos="zoom-in-left">
