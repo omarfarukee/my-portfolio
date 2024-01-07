@@ -3,7 +3,8 @@ import education from '../../assets/about-img/education.png'
 import experience from '../../assets/about-img/experinec.png'
 import hobby from '../../assets/about-img/hobby.png'
 import { FaUserGraduate } from "react-icons/fa6";
-
+import { GiPerpendicularRings } from "react-icons/gi";
+import { FaUsersGear } from "react-icons/fa6";
 import './About.css'
 import { FaHome } from 'react-icons/fa';
 const About = () => {
@@ -22,7 +23,7 @@ const About = () => {
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
-                                <h1 className='text-3xl'><FaHome></FaHome></h1>
+                                <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 font-bold text-green-400 border-b-2'><FaHome></FaHome>HOME</h1></div>
                                 <p>Hailing from the bustling city of Dhaka in Bangladesh, I am a 22-year-old individual with roots in the picturesque district of Gazipur. Currently residing in Dhaka, this city not only represents my present but also holds the key to my past and future. It is within these lively streets that I have grown up, surrounded by the rich cultural tapestry of Bangladesh, shaping the person I am today.</p>
                             </div>
 
@@ -54,8 +55,8 @@ const About = () => {
                             >
                                 <span></span>
                                 <div className='p-5 a-content h-60'>
-                                    <h1 className='text-3xl'><FaUserGraduate /></h1>
-                                    <p>Having completed my Secondary School Certificate in 2017 and followed by the Higher Secondary Certificate in 2019, I am currently immersed in the academic pursuit of a Bachelor of Social Science (BSS) at the National University. Embarking on my second year, this educational journey not only shapes my intellectual growth but also fuels my curiosity about the intricate dynamics of the social sciences. It is a phase of learning and exploration that I approach with enthusiasm and dedication.</p>
+                                    <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 font-bold text-orange-400 border-b-2'><FaUserGraduate />EDUCATION</h1></div>
+                                    <p>Having completed my Secondary School Certificate in 2017 and followed by the Higher Secondary Certificate in 2019, I am currently immersed in the academic pursuit of a Bachelor of Social Science (BSS) at the National University. Embarking on my second year, this educational journey not only shapes my intellectual growth but also fuels my curiosity about the intricate dynamics of the social sciences.</p>
                                 </div>
 
                             </div>
@@ -75,8 +76,9 @@ const About = () => {
                         >
                             <span></span>
                             <div className='p-5 a-content h-60'>
-                                <h1>hello</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                            <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-purple-400 border-b-2'><GiPerpendicularRings />HOBBIES</h1></div>
+                                <p>
+                                    From an early age, drawing has been my creative refuge, allowing me to bring imagination to paper. I am also passionate about singing, enjoy outdoor activities like walking, and actively participate in sports like cricket, football, and badminton during my free time.</p>
                             </div>
 
                         </div>
@@ -107,8 +109,8 @@ const About = () => {
                             >
                                 <span></span>
                                 <div className='p-5 a-content h-60'>
-                                    <h1>hello</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo accusantium natus laudantium id quos, dolor similique facere quidem est inventore repellendus eos quasi accusamus numquam rerum illum aspernatur alias doloribus ipsa sapiente, obcaecati amet ratione ab. Dignissimos, recusandae ipsam laudantium consectetur fuga cupiditate. Ex beatae saepe mollitia veniam. Atque, nisi.</p>
+                                <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-yellow-500 border-b-2'><FaUsersGear />EXPERIENCE</h1></div>
+                                    <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A one-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
                                 </div>
 
                             </div>
