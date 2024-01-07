@@ -17,6 +17,7 @@ import Parallax from "../Parallax/Parallax";
 import Skills from './../Skills/Skills';
 import Projects from "../Projects/Projects";
 import About from "../About/About";
+import Contact from "../Contact/Contact";
 const Home = () => {
   useEffect(() =>{
     AOS.init({duration: 2000});
@@ -71,7 +72,7 @@ const Home = () => {
           <div className='flex justify-between mt-5'>
 
             <div data-aos="fade-right" className="body">
-              <div className={`container ${isActive ? 'active' : ''}`}>
+              <div className={`container ${isActive ? 'active' : ''} `}>
                 <div className="flex justify-center mb-5">
                   <div>
                    {!isActive ? <button className="text-4xl text-white " onClick={handleToggleClick}>
@@ -110,7 +111,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="w-full mb-8">
-                    <a href="" className="flex w-full h-5">
+                    <a href="#contact" className="flex w-full h-5">
                       <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 5 }}><p><IoMdContacts /></p></i>
                       <span className="h-5 text-sm" style={{ '--g': 5 }}>Conatact</span>
                     </a>
@@ -147,6 +148,9 @@ const Home = () => {
      </div>
      <div id="about">
       <About></About>
+     </div>
+     <div id="contact" className="pb-16">
+      <Contact></Contact>
      </div>
     </div>
   );
