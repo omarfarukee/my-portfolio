@@ -1,29 +1,16 @@
 
 import './Contact.css'
+import contact from '../../assets/contact-img/420797817_2073469626385685_3776584553687943742_n-removebg-preview.png'
 const Contact = () => {
     return (
         <div className="c-back">
             <div className='flex justify-center pt-12 mb-10 text-3xl text-white'>
                 Contact
             </div>
-            {/* <div className='flex justify-center'>
-                <div>
-                    <div className="mb-5 field-group">
-                        <input type="text" name="name" id='name' className="input-field" placeholder="Enter Name" autoComplete="off" />
-                        <label htmlFor="name" className="input-label">Enter Name</label>
-                    </div>
-                    <div className="mb-5 field-group">
-                        <input type="text" name="name" id='name' className="input-field" placeholder="Enter Name" autoComplete="off" />
-                        <label htmlFor="name" className="input-label">Enter Name</label>
-                    </div>
-                    <div className="field-group">
-                        <input type="text" name="name" id='name' className="input-field" placeholder="Enter Name" autoComplete="off" />
-                        <label htmlFor="name" className="input-label">Enter Name</label>
-                    </div>
+            <div className='flex c-back justify-evenly'>
+                <div className='border rounded-full c-img'>
+                    <img src={contact} className='w-96' alt="" />
                 </div>
-
-            </div> */}
-            <div className='c-back'>
             <div className='wrapper'>
                 <form action="">
                     <div className='input-box'>
