@@ -17,9 +17,8 @@
     width: 500px;
     border : 1px solid #ffffff;
     backdrop-filter: blur(10px) ;
-    border-radius: 10px;
+    border-radius: 50px;
     transition: 0.5s;
-
 }
 .wrapper:hover{
     box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
@@ -58,9 +57,9 @@
 .inputBox input{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     color: #ffffff;
 }
@@ -71,7 +70,7 @@
     pointer-events: none;
     font-size: 1em;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.4s;
     color: #aaa2a2;
 }
 .inputBox input:valid ~  span,
