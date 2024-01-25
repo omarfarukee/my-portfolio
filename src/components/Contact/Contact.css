@@ -1,57 +1,11 @@
-/* .c-back{
-    background: #292929;
-    height: 500px;
-}
-.field-group{
-    width: 600px;
-    position: relative;
-    padding-top: 15px;
-}
-.input-field{
-    width: 100%;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid #999999;
-    padding: 10px 0;
-    background: transparent;
-    font-size: 1.2em;
-    color: #ffffff;
-    transition: 0.3s;
 
-}
-.input-label{
-    display: block;
-    position: absolute;
-    top: 0;
-    font-size: 1em;
-    color: #999999;
-    text-transform: uppercase;
-    transition: 0.3s;
-
-}
-.input-field::placeholder{
-    color: transparent;
-
-}
-.input-field:placeholder-shown ~ .input-label{
-    font-size: 2em;
-    top: 20px;
-   
-}
-.input-field:focus{
-    border-image: linear-gradient(to right, #ef5a03, #d1d357);
-    border-image-slice: 1;
-}
-.input-field:focus ~ .input-label{
-    display: block;
-    position: absolute;
-    top: 0;
-    font-size: 1em;
-    columns: #ef5a03 ;
-} */
 
 .c-back{
-    background: black;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.90)),url('../../assets/contact-img/816.jpg');
     padding: 10px;
 }
 .wrapper{
@@ -61,42 +15,23 @@
     background: transparent;
     height: 400px;
     width: 500px;
-    border : 5px solid #333;
+    border : 1px solid #ffffff;
+    backdrop-filter: blur(10px) ;
     border-radius: 10px;
     transition: 0.5s;
+
 }
 .wrapper:hover{
-    border : 5px solid #0ef;
     box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
 }
-.input-box{
-    position: relative;
-    width: 320px;
-    margin-bottom: 10px;
-}
-.input-box input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #333;
-    outline: none;
-    border-radius: 5px; 
-    color: #ffffff;
-    padding: 0 10px 0 35px;
-    transition: 0.5s;
-}
-.wrapper:hover .input-box input{
-    border : 2px solid #0ef;
-    box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
-}
+
 .c-button{
     
     width: 100%;
     height: 45px;
-    background: #333;
     border:none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
     font-weight: 500;
@@ -113,4 +48,48 @@
 .c-img{
     border : 2px solid #0ef;
     box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
+}
+
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #aaa2a2;
+}
+.inputBox input:valid ~  span,
+.inputBox input:focus ~ span{
+    color: #0ef;
+    transform: translateX(10px) translateY(-7px);
+    padding: 0 10px;
+    font-size: 0.65em;
+    border-left: 1px solid #0ef;
+    border-right: 1px solid #0ef;
+    letter-spacing: 0.2em;
+    background: #333;
+ }
+
+ .inputBox input:valid,
+.inputBox input:focus{
+
+    border: 1px solid #0ef;
+    box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
+
 }
