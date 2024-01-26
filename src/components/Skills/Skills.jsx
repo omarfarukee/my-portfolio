@@ -46,7 +46,7 @@ const SkillCard = ({ color, percentage, image, skillName }) => {
 
 const Skills = () => {
   return (
-    <div className='border-b-2  skills-top skills-bg'>
+    <div className=' skills-top skills-bg'>
       <div className='flex justify-center pt-5' data-aos="fade-up">
         <h1 className='text-3xl font-bold text-white'>Skills Analysis</h1>
       </div>

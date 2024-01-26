@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import React, { useRef, useState } from 'react';
 import { FiLoader } from "react-icons/fi";
 import './Contact.css'

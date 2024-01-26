@@ -2,8 +2,12 @@
     margin-top:42%;
 }
 .skills-bg{
-    background-color: black;
+    width: 100%;
     height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.90)),url('../../assets/skills/bg-1.jpg');
+    padding: 10px;
 }
 .skill-container .card .percent{
     position: relative;
