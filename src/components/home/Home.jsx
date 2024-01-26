@@ -18,9 +18,10 @@ import Skills from './../Skills/Skills';
 import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+import AnimatedParallax from "../AnimatedParallax/AnimatedParallax";
 const Home = () => {
-  useEffect(() =>{
-    AOS.init({duration: 2000});
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
   })
   const [animationIndex, setAnimationIndex] = useState(0);
 
@@ -63,95 +64,32 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className=" background">
-        <div className="lines">
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-
-          <div className='flex justify-between mt-5'>
-
-            <div data-aos="fade-right" className="body">
-              <div className={`container ${isActive ? 'active' : ''} `}>
-                <div className="flex justify-center mb-5">
-                  <div>
-                   {!isActive ? <button className="text-4xl text-white " onClick={handleToggleClick}>
-                      <HiMenuAlt1 />
-                    </button>:
-                    <button className="text-3xl text-white border-b-2" onClick={handleToggleClick}>
-                      <ImCross />
-                    </button>}
-                  </div>
-                </div>
-
-                <ul className="w-14 navItems">
-                  <li className="w-full mb-8 ">
-                    <a href="" className="flex w-full h-5">
-                      <i className="pb-6 pl-4 pr-10 text-2xl " style={{ '--i': 1 }}><p><FaHome></FaHome></p></i>
-                      <span className="h-5 text-sm " style={{ '--g': 1 }}>home</span>
-                    </a>
-                  </li>
-                  <li className="w-full mb-8">
-                    <a href="#skills" className="flex w-full h-5">
-                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 2 }}><p><GiSkills />
-                      </p></i>
-                      <span className="h-5 text-sm" style={{ '--g': 2 }}>Skills</span>
-                    </a>
-                  </li>
-                  <li className="w-full mb-8">
-                    <a href="#projects" className="flex w-full h-5">
-                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 3 }}><p><GoProject /></p></i>
-                      <span className="h-5 text-sm" style={{ '--g': 3 }}>Projects</span>
-                    </a>
-                  </li>
-                  <li className="w-full mb-8">
-                    <a href="#about" className="flex w-full h-5">
-                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 4 }}><p><BiSolidUserPin /></p></i>
-                      <span className="h-5 text-sm" style={{ '--g': 4 }}>About</span>
-                    </a>
-                  </li>
-                  <li className="w-full mb-8">
-                    <a href="#contact" className="flex w-full h-5">
-                      <i className="pb-6 pl-4 pr-10 text-2xl pt-15" style={{ '--i': 5 }}><p><IoMdContacts /></p></i>
-                      <span className="h-5 text-sm" style={{ '--g': 5 }}>Conatact</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-
-
-            <div data-aos="fade-down" data-aos-duration="1000" className='w-2/3 ml-6 text-white border-t-2'>
-              <h1></h1>
-            </div>
-            <div data-aos="fade-left" className='text-white '>
-              <button className="flex items-center p-2 font-bold rounded-lg btn hover:bg-green-300 hover:text-black"><FaRegFilePdf />Resume</button>
-            </div>
-          </div>
-
-
+      <div>
+        <AnimatedParallax></AnimatedParallax>
+        <div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam? Esse nostrum perspiciatis accusantium, aut modi atque non sint consequatur amet vero, architecto possimus dolorem sed tempore alias, reprehenderit reiciendis.</p>
         </div>
       </div>
       <div data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0" id="animated-text" style={getAnimationStyles()}>Hi there</div>
-     <div className="hidden lg:block">
-      <Parallax></Parallax>
-     </div>
-     <div id="skills">
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" className="pb-24" id="animated-text" style={getAnimationStyles()}>Hi there</div>
+      <div className="hidden lg:block">
+        <Parallax></Parallax>
+      </div>
+      <div id="skills">
         <Skills></Skills>
-     </div>
-     <div id="projects">
-      <Projects></Projects>
-     </div>
-     <div id="about">
-      <About></About>
-     </div>
-     <div id="contact" className="pb-16">
-      <Contact></Contact>
-     </div>
+      </div>
+      <div id="projects">
+        <Projects></Projects>
+      </div>
+      <div id="about">
+        <About></About>
+      </div>
+      <div id="contact" className="">
+        <Contact></Contact>
+      </div>
+      
     </div>
   );
 };
