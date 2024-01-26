@@ -9,6 +9,7 @@ import cloudsB from "../../assets/Parallax/clouds-bottom.svg"
 import cloundsl from "../../assets/Parallax/clouds-left.svg"
 import cloundsR from "../../assets/Parallax/clouds-right.svg"
 import star from "../../assets/Parallax/stars.svg"
+import moon from "../../assets/Parallax/pngwing.com (4).png"
 import './AniamtedParallax.css'
 const AnimatedParallax = () => {
     const [background, setBackground] = useState(20)
@@ -24,7 +25,7 @@ const AnimatedParallax = () => {
     const sun = useRef(null);
     const copy = useRef(null);
     const btn = useRef(null);
-
+    const moons = useRef(null);
     useEffect(() => {
         let ctx = gsap.context(() => {
             gsap.registerPlugin(ScrollTrigger);
@@ -103,8 +104,16 @@ const AnimatedParallax = () => {
             tl.to(
                 copy.current,
                 {
-                    y: "-250%",
-                    opacity: 1
+                    y: "-80%",
+                    opacity: 2
+                },
+                0
+            );
+            tl.to(
+                moons.current,
+                {
+                    y: "-100%",
+                    opacity: 2
                 },
                 0
             );
@@ -131,9 +140,11 @@ const AnimatedParallax = () => {
                     <img ref={cloudsLeft} className='clouds-left' src={cloundsl} />
                     <img ref={cloudsRight} className='clouds-right' src={cloundsR} />
                     <img ref={stars} className='stars' src={star} />
+                    <div ref={moons} className='moons'>
+                         <img className='w-72' src={moon} alt="" />
+                    </div>
                     <div ref={copy} className="copy">
-                        <h1>Journey</h1>
-                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate officiis mollitia debitis blanditiis? Dolor maxime, velit repudiandae a, iure asperiores obcaecati nisi debitis, dicta sit deserunt voluptatibus sint aspernatur quam.</p>
+                        
                     </div>
                 </div>
             </div>

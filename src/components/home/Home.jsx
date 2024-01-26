@@ -74,6 +74,8 @@ const Home = () => {
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
         data-aos-offset="0" className="pb-24" id="animated-text" style={getAnimationStyles()}>Hi there</div>
+        <div>
+        </div>
       <div className="hidden lg:block">
         <Parallax></Parallax>
       </div>
