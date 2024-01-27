@@ -6,7 +6,7 @@ const Parallax = () => {
 
     return (
         <div>
-             <section className='tops mt-20 relative bg-[url("https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] bg-fixed bg-cover bg-no-repeat bg-center h-96 md:h-[520px] duration-300'>
+             <section className=' relative bg-[url("https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] bg-fixed bg-cover bg-no-repeat bg-center h-96 md:h-[520px] duration-300'>
             {/* Opacity controller */}
             <div className="absolute inset-0 bg-black bg-opacity-80"></div>
             <div  className='absolute text-white duration-300 lg:pl-40 top-10 md:transform md:-translate-x-1/2 md:-translate-y-1/2'>

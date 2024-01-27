@@ -18,7 +18,7 @@ import Skills from './../Skills/Skills';
 import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import AnimatedParallax from "../AnimatedParallax/AnimatedParallax";
+import Animated from "../Animated/Animated";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -56,26 +56,20 @@ const Home = () => {
         return {};
     }
   };
-  const [isActive, setIsActive] = useState(false);
-
-  const handleToggleClick = () => {
-    setIsActive(!isActive);
-  };
 
   return (
     <div className="home">
-      <div>
-        <AnimatedParallax></AnimatedParallax>
-        <div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam? Esse nostrum perspiciatis accusantium, aut modi atque non sint consequatur amet vero, architecto possimus dolorem sed tempore alias, reprehenderit reiciendis.</p>
-        </div>
-      </div>
-      <div data-aos="fade-zoom-in"
+{/*       
+        <div data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
-        data-aos-offset="0" className="pb-24" id="animated-text" style={getAnimationStyles()}>Hi there</div>
-        <div>
-        </div>
+        data-aos-offset="0" className="pb-24" id="animated-text" style={getAnimationStyles()}>Hi there</div> */}
+       <div>
+      <Animated></Animated>
+    </div>
+      
+      <div>
+      </div>
       <div className="hidden lg:block">
         <Parallax></Parallax>
       </div>
@@ -91,7 +85,9 @@ const Home = () => {
       <div id="contact" className="">
         <Contact></Contact>
       </div>
-      
+    <div>
+      <Animated></Animated>
+    </div>
     </div>
   );
 };
