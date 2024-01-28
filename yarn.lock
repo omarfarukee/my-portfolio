@@ -2148,6 +2148,16 @@ react-router@6.21.3:
   dependencies:
     "@remix-run/router" "1.14.2"
 
+react-skillbars@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-skillbars/-/react-skillbars-2.2.0.tgz#e355353aaefc42690ba32eec78afa409f4b074e6"
+  integrity sha512-MzCILQkdUotSCtTpUK6KPFj41ng9rmkQULEIqlTb2FE7omAekEA27qP18bbP/qnjyuA+fdGXqA3LaPBCJoXKKA==
+
+react-skills@^1.27.0:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/react-skills/-/react-skills-1.27.0.tgz#31c7aba179f0e833f9eb4e3634e9644bdd05bf17"
+  integrity sha512-kdHyAi7TaAjXU8fUyZf7BPNgGKGl2E1OHIZRMDvU344zxwj5+0Qe76YcYxAjjdD26PvmT+3uOLUfhvheLXJVzA==
+
 react-type-animation@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/react-type-animation/-/react-type-animation-3.2.0.tgz"

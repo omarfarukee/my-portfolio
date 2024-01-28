@@ -73,9 +73,9 @@ const Animated = () => {
       <div
         id="intro-slider"
         className="absolute top-0 left-0 z-10 flex flex-col w-full h-screen gap-10 p-10 tracking-tight bg-gray-50">
-        <h1 id="title-1" className="mt-32 lg:mt-0 text-7xl lg:text-9xl">Welcome</h1>
-        <h1 id="title-2" className=" text-7xl lg:text-9xl">to my</h1>
-        <h1 id="title-3" className=" text-7xl lg:text-9xl">Portfolio</h1>
+        <h1 id="title-1" className="font-bold mt-36 lg:mt-0 text-7xl lg:text-9xl">Welcome</h1>
+        <h1 id="title-2" className="font-bold text-7xl lg:text-9xl">to my</h1>
+        <h1 id="title-3" className="font-bold text-7xl lg:text-9xl">Portfolio</h1>
       </div>
       
       <div className="h-screen bg-gray-950">

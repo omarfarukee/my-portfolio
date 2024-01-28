@@ -1,9 +1,7 @@
-.skills-top{
-    
-}
+
 .skills-bg{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0,0,0,0.90), rgba(0,0,0,0.90)),url('../../assets/skills/bg-1.jpg');
@@ -14,6 +12,7 @@
     width: 150px;
     height: 150px;
 }
+
 .skill-container .card .percent svg{
     transform: rotate(270deg);
     width: 150px;

@@ -31,9 +31,9 @@ const Parallax = () => {
                             <img src={img} className='border-2 rounded-full w-72' alt="" />
                         </div>
                     </div>
-                    <div className='mt-32 border lg:hidden small-pera'>
-                        <div className='border'>
-                            <h1 className='text-2xl small-omar'><TypeAnimation
+                    <div className='mt-32 lg:hidden'>
+                        <div className=''>
+                            <h1 className='flex justify-center text-2xl'><TypeAnimation
                                 sequence={[
                                     'Hello, I am Omar Faruk',
                                     1500,

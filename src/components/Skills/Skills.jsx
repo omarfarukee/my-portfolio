@@ -17,27 +17,29 @@ import mongodb from '../../assets/skills/mongodb-logo.png'
 import mongoo from '../../assets/skills/mongoose5_62x30_transparent.png'
 import nexts from '../../assets/skills/next.jpg'
 import dom from '../../assets/skills/dom-removebg-preview.png'
-
+import { SkillBar } from 'react-skillbars';
 const SkillCard = ({ color, percentage, image, skillName }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
   return (
-    <div ref={ref} className='w-40 h-40 p-5 shadow-2xl rounded-xl card'>
-      <div className='percent right-4 bottom-3' style={{ '--clr': color, '--num': percentage }}>
-        <div className={`dot ${inView ? 'animate' : ''}`}></div>
-        <svg className='relative'>
-          <circle cx={"70"} cy={"70"} r={'70'}></circle>
-          <circle cx={"70"} cy={"70"} r={'70'}></circle>
-        </svg>
-        <div className='number'>
-           
-          <img className='w-12' src={image} alt="" />
-          <p>{skillName}</p>
-          <h2>{percentage} <span>%</span></h2>
-         
+    <div>
+      <div ref={ref} className='hidden w-40 h-40 p-5 shadow-2xl rounded-xl card lg:block'>
+        <div className='percent right-4 bottom-3' style={{ '--clr': color, '--num': percentage }}>
+          <div className={`dot ${inView ? 'animate' : ''}`}></div>
+          <svg className='relative'>
+            <circle cx={"70"} cy={"70"} r={'70'}></circle>
+            <circle cx={"70"} cy={"70"} r={'70'}></circle>
+          </svg>
+          <div className='number'>
 
+            <img className='w-12' src={image} alt="" />
+            <p>{skillName}</p>
+            <h2>{percentage} <span>%</span></h2>
+
+
+          </div>
         </div>
       </div>
     </div>
@@ -45,10 +47,52 @@ const SkillCard = ({ color, percentage, image, skillName }) => {
 };
 
 const Skills = () => {
+  const skills = [
+    { type: 'HTML', level: 98},
+    { type: 'CSS', level: 90},
+    { type: 'Javascript', level: 85},
+    { type: 'React', level: 85 },
+    { type: 'Node.js', level: 85},
+    { type: 'TailWind ', level: 90},
+    { type: 'Bootstrap', level: 92},
+    { type: 'Firebase', level: 85},
+    { type: 'Express.js', level: 80},
+    { type: 'MongoDB', level: 92},
+    { type: 'TypeScript', level:82 },
+    { type: 'R-roter', level: 88},
+    { type: 'Mongoose', level: 65 },
+    { type: 'Next.js', level: 60}
+  ];
+  const colors = {
+    bar: '#3E3232',
+    title: {
+      text: {
+        hue: {
+          minimum: 10,
+          maximum: 10,
+        },
+        saturation: 10,
+        level: {
+          minimum: 50,
+          maximum: 70,
+        },
+      },
+      background: {
+        hue: 10,
+        saturation: 10,
+        level: 10,
+      },
+    },
+  };
   return (
     <div className=' skills-top skills-bg'>
       <div className='flex justify-center pt-5' data-aos="fade-up">
         <h1 className='text-3xl font-bold text-white'>Skills Analysis</h1>
+      </div>
+      <div className='block mt-12 lg:hidden'>
+        <div data-aos='fade-down' className='lg:w-96'>
+          <SkillBar skills={skills} height={40} colors={colors} className='border' />
+        </div>
       </div>
       <div className='mt-10 skill-container' data-aos="fade-up">
         <div className='flex justify-center gap-10'>
@@ -62,19 +106,18 @@ const Skills = () => {
         <div className='flex justify-center gap-10 mt-5 mb-5'>
           <SkillCard color='#7a78ff' percentage='85' skillName='React js' image={reacts} />
           <SkillCard color='#8c2829' percentage='88' skillName='React Router' image={dom} />
-          <SkillCard color='#76c1e7' percentage='85' skillName='TypeScript' image={typescript} />
-          <SkillCard color='#7bb265' percentage='90' skillName='Node js' image={node} />
-          <SkillCard color='#949492' percentage='90' skillName='Express js' image={express} />
+          <SkillCard color='#76c1e7' percentage='82' skillName='TypeScript' image={typescript} />
+          <SkillCard color='#7bb265' percentage='85' skillName='Node js' image={node} />
+          <SkillCard color='#949492' percentage='80' skillName='Express js' image={express} />
 
 
         </div>
         <div className='flex justify-center gap-10'>
           <SkillCard color='#81c564' percentage='92' skillName='MongoDB' image={mongodb} />
-          <SkillCard color='#880000' percentage='80' skillName='Mongoose' image={mongoo} />
+          <SkillCard color='#880000' percentage='75' skillName='Mongoose' image={mongoo} />
           <SkillCard color='#d0d0d0' percentage='60' skillName='Next js' image={nexts} />
         </div>
 
-        {/* Add more SkillCard components as needed */}
       </div>
     </div>
   );
@@ -82,43 +125,4 @@ const Skills = () => {
 
 export default Skills;
 
-// import './Skills.css'
-// const Skills = () => {
-//     return (
-//         <div className='mb-10 skills-top skills-bg'>
-//             <div className='flex justify-center pt-5'data-aos="fade-up">
-//                 <h1 className='text-3xl font-bold text-white'>Skills Analaysis</h1>
-//             </div>
-//             <div className='skill-container'>
-//                     <div   className='w-40 h-40 p-5 ml-10 border shadow-2xl card'>
-//                             <div className='percent right-4 bottom-3' style={{'--clr':'#04fc42', '--num':'85'}}>
-//                                 <div className='dot'></div>
-//                                 <svg className='relative'>
-//                                     <circle cx={"70"} cy={"70"} r={'70'}></circle>
-//                                     <circle cx={"70"} cy={"70"} r={'70'}></circle>
-//                                 </svg>
-//                                 <div className='number'>
-//                                         <h2>85 <span>%</span></h2>
-//                                         <p>HTML</p>
-//                                 </div>
-//                             </div>
-//                     </div>
-//                     <div   className='w-40 h-40 p-5 ml-10 border shadow-2xl card'>
-//                             <div className='percent right-4 bottom-3' style={{'--clr':'#f542a1', '--num':'60'}}>
-//                                 <div className='dot'></div>
-//                                 <svg className='relative'>
-//                                     <circle cx={"70"} cy={"70"} r={'70'}></circle>
-//                                     <circle cx={"70"} cy={"70"} r={'70'}></circle>
-//                                 </svg>
-//                                 <div className='number'>
-//                                         <h2>60 <span>%</span></h2>
-//                                         <p>HTML</p>
-//                                 </div>
-//                             </div>
-//                     </div>
-//             </div>
-//         </div>
-//     );
-// };
 
-// export default Skills;
