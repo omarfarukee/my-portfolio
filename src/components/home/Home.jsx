@@ -9,7 +9,6 @@ import { GoProject } from "react-icons/go";
 import { IoMdContacts } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './Navbar.css'
 import './Home.css'
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
@@ -58,37 +57,30 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
-{/*       
-        <div data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0" className="pb-24" id="animated-text" style={getAnimationStyles()}>Hi there</div> */}
-       <div>
-      <Animated></Animated>
-    </div>
-      
-      <div>
+    <div className="">
+        <div>
+          <Animated></Animated>
+        </div>
+
+        <div>
+        </div>
+        <div className="">
+          <Parallax></Parallax>
+        </div>
+        <div id="skills">
+          <Skills></Skills>
+        </div>
+        <div id="projects">
+          <Projects></Projects>
+        </div>
+        <div id="about">
+          <About></About>
+        </div>
+        <div id="contact" className="">
+          <Contact></Contact>
+        </div>
       </div>
-      <div className="hidden lg:block">
-        <Parallax></Parallax>
-      </div>
-      <div id="skills">
-        <Skills></Skills>
-      </div>
-      <div id="projects">
-        <Projects></Projects>
-      </div>
-      <div id="about">
-        <About></About>
-      </div>
-      <div id="contact" className="">
-        <Contact></Contact>
-      </div>
-    <div>
-      <Animated></Animated>
-    </div>
-    </div>
+
   );
 };
 

@@ -6,13 +6,12 @@ const Parallax = () => {
 
     return (
         <div>
-             <section className=' relative bg-[url("https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] bg-fixed bg-cover bg-no-repeat bg-center h-96 md:h-[520px] duration-300'>
-            {/* Opacity controller */}
-            <div className="absolute inset-0 bg-black bg-opacity-80"></div>
-            <div  className='absolute text-white duration-300 lg:pl-40 top-10 md:transform md:-translate-x-1/2 md:-translate-y-1/2'>
-                <div className="items-center w-full px-3 lg:flex justify-evenly name ">
-                    <div className='w-1/2'>
-                        <h1  className='text-2xl'><TypeAnimation
+            <section className=' relative bg-[url("https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] bg-fixed bg-cover bg-no-repeat bg-center h-screen md:h-[520px] duration-300 flex justify-center lg:flex-none'>
+                <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+                <div className='absolute text-white duration-300 lg:pl-40 top-10 md:transform md:-translate-x-1/2 md:-translate-y-1/2'>
+                    <div className="relative items-center hidden w-full px-3 lg:flex justify-evenly name lg:blcok">
+                        <div className='w-1/2'>
+                            <h1 className='text-2xl'><TypeAnimation
                                 sequence={[
                                     'Hello, I am Omar Faruk',
                                     1500,
@@ -24,16 +23,36 @@ const Parallax = () => {
                                 wrapper="span"
                                 repeat={Infinity}
                             /></h1>
-                        <h2 className='font-extrabold cursor-pointer lg:text-3xl h2'><span>A</span> Full-Stack<span> Web developer</span></h2>
-                      <p className='mt-10'>
-                        Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and am still learning and will learn in the future.</p>  
+                            <h2 className='font-extrabold cursor-pointer lg:text-3xl h2'><span>A</span> Full-Stack<span> Web developer</span></h2>
+                            <p className='mt-10'>
+                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and am still learning and will learn in the future.</p>
+                        </div>
+                        <div className='rounded-full'>
+                            <img src={img} className='border-2 rounded-full w-72' alt="" />
+                        </div>
                     </div>
-                    <div className='rounded-full'>
-                            <img src={img}  className='border-2 rounded-full w-72' alt="" />
-                    </div>           
+                    <div className='mt-32 border lg:hidden small-pera'>
+                        <div className='border'>
+                            <h1 className='text-2xl small-omar'><TypeAnimation
+                                sequence={[
+                                    'Hello, I am Omar Faruk',
+                                    1500,
+                                    '',
+                                    1000
+                                ]}
+                                speed={50}
+                                style={{ fontSize: '' }}
+                                wrapper="span"
+                                repeat={Infinity}
+                            /></h1>
+                            <h2 className='mt-5 text-lg font-extrabold cursor-pointer h2'><span>A</span> Full-Stack<span> Web developer</span></h2>
+                            <div className='mt-16 rounded-full'>
+                                <img src={img} className='border-2 rounded-full w-72 small-pic' alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
     );
 };
