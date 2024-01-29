@@ -57,11 +57,11 @@ const Home = () => {
   };
 
   return (
-    <div className="">
-        <div>
+ 
+      <div className="w-full">
+        <div className="">
           <Animated></Animated>
         </div>
-
         <div>
         </div>
         <div className="">
@@ -80,7 +80,6 @@ const Home = () => {
           <Contact></Contact>
         </div>
       </div>
-
   );
 };
 

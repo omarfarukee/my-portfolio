@@ -54,10 +54,10 @@ const Projects = () => {
                 </div>
             </div>
             <div className={full}>
-                <div className='flex mt-16 justify-evenly' data-aos="fade-down">
-                    <div className='ml-3 p-card'>
+                <div className=' lg:flex lg:mt-16 mt-28 justify-evenly' data-aos="fade-down">
+                    <div className='lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#ffff' }}>
-                            <img src={gadget} alt="" className='w-40 p-logo' />
+                            <img src={gadget} alt="" className='w-28 lg:w-40 p-logo' />
                         </div>
                         <div className='p-3 p-content'>
                         <h1 className='flex justify-center text-2xl font-bold '>Features</h1>
@@ -66,11 +66,8 @@ const Projects = () => {
                                 <li>• Admin capabilities for adding, updating, and deleting products</li>
                                 <li>• Admin capabilities for adding, updating, and deleting products</li>
                                 <li>• Inclusion of a review system for buyers to share feedback.Multiple payment choices, including credit/debit cards, for flexibility.</li>
-                              
-                    
-
                             </small>
-                            <div className='flex gap-2 p-2'>
+                            <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
@@ -79,7 +76,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <img src={img1} alt="" className='p-product-img' />
-                        <img src={img2} alt="" className='mt-40 p-product-img1' />
+                        <img src={img2} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
                     <div className='ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#16a34a' }}>
@@ -94,7 +91,7 @@ const Projects = () => {
                                 <li>• Seller can advertise his new added products</li>
                                 <li>• User must be logged in</li>
                             </small>
-                            <div className='flex gap-2 p-2 mt-5'>
+                            <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://bike-frenzy-7b4f7.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
@@ -104,7 +101,7 @@ const Projects = () => {
 
                         </div>
                         <img src={img3} alt="" className='p-product-img' />
-                        <img src={img4} alt="" className='mt-40 p-product-img1' />
+                        <img src={img4} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
                     <div className='ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#7faa51' }}>
@@ -118,7 +115,7 @@ const Projects = () => {
                                 <li>• User can add item</li>
                                 <li>• User should be logged in before reviewing or adding</li>
                             </small>
-                            <div className='flex gap-2 p-2 mt-5'>
+                            <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://homes-food.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
@@ -127,12 +124,12 @@ const Projects = () => {
                             </div>
                         </div>
                         <img src={img5} alt="" className='p-product-img' />
-                        <img src={img6} alt="" className='mt-40 p-product-img1' />
+                        <img src={img6} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
                 </div>
             </div>
             <div className={front}>
-                <div className='flex mt-16 justify-evenly'>
+                <div className='mt-16 lg:flex justify-evenly'>
 
                     <div className='ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#b24cbf' }}>
@@ -145,13 +142,13 @@ const Projects = () => {
                                 <li>• In here we gave you Some common quiz that you <span className='ml-2'>can justify yourself in this way how you good at <span className='ml-2'>his.</span></span> </li>
                                 <li>• The site is stunning for you .</li>
                             </small>
-                            <div className='flex gap-2 p-2 mt-5'>
+                            <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://cosmic-quick-quiz-detector-qui-55c193.netlify.app/home" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://github.com/omarfarukee/Quick-Quiz-Detector" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
                         </div>
                         <img src={img9} alt="" className='p-product-img' />
-                        <img src={img10} alt="" className='mt-40 p-product-img1' />
+                        <img src={img10} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
                     <div className='ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#0dcaf0' }}>
@@ -163,14 +160,14 @@ const Projects = () => {
                                 <li>• Its a one landig page design</li>
                                
                             </small>
-                            <div className='flex gap-2 p-2 mt-5'>
+                            <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://campus-sia-396920.netlify.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
                                 <button className='w-32 p-1 rounded-md bg-cyan-600'><a href="https://github.com/omarfarukee/campus-sia" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
 
                         </div>
                         <img src={img11} alt="" className='p-product-img' />
-                        <img src={img12} alt="" className='mt-40 p-product-img1' />
+                        <img src={img12} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
                 </div>
             </div>
