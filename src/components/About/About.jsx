@@ -13,7 +13,8 @@ const About = () => {
             <div className='flex justify-center pt-12 mb-10' data-aos="fade-down">
                 <h1 className='text-3xl font-bold text-white'>About</h1>
             </div>
-            <div>
+            <div className='hidden lg:blcok'>
+                    <div>
                 <div className="flex justify-end w-3/5 mb-2 padding">
                     <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">1</h1>
                 </div>
@@ -119,6 +120,8 @@ const About = () => {
                 </div>
 
             </div>
+            </div>
+        
         </div>
     );
 };

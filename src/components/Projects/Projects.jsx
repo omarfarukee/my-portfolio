@@ -54,8 +54,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className={full}>
-                <div className=' lg:flex lg:mt-16 mt-28 justify-evenly' data-aos="fade-down">
-                    <div className='lg:ml-3 p-card'>
+                <div className='flex flex-col items-center lg:items-start lg:flex-row lg:mt-16 mt-28 lg:justify-evenly' data-aos="fade-down">
+                    <div className='mb-20 lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#ffff' }}>
                             <img src={gadget} alt="" className='w-28 lg:w-40 p-logo' />
                         </div>
@@ -78,7 +78,7 @@ const Projects = () => {
                         <img src={img1} alt="" className='p-product-img' />
                         <img src={img2} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
-                    <div className='ml-3 p-card'>
+                    <div className='mb-20 lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#16a34a' }}>
                             <img src={bike} alt="" className='w-40 p-logo bg-slate-200 rounded-2xl' />
                         </div>
@@ -103,7 +103,7 @@ const Projects = () => {
                         <img src={img3} alt="" className='p-product-img' />
                         <img src={img4} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
-                    <div className='ml-3 p-card'>
+                    <div className=' lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#7faa51' }}>
                             <img src={home} alt="" className='w-40 rounded-lg p-logo' />
                         </div>
@@ -129,9 +129,9 @@ const Projects = () => {
                 </div>
             </div>
             <div className={front}>
-                <div className='mt-16 lg:flex justify-evenly'>
+                <div className='flex flex-col items-center lg:items-start lg:flex-row lg:mt-16 mt-28 lg:justify-evenly'>
 
-                    <div className='ml-3 p-card'>
+                    <div className='mb-20 lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#b24cbf' }}>
                             <img src={quick} alt="" className='w-40 rounded-lg p-logo' />
                         </div>
@@ -150,7 +150,7 @@ const Projects = () => {
                         <img src={img9} alt="" className='p-product-img' />
                         <img src={img10} alt="" className='hidden mt-40 p-product-img1 lg:block' />
                     </div>
-                    <div className='ml-3 p-card'>
+                    <div className='lg:ml-3 p-card'>
                         <div className='p-circle' style={{ '--clr': '#0dcaf0' }}>
                             <img src={glob} alt="" className='w-40 rounded-lg p-logo' />
                         </div>

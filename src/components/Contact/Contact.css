@@ -20,6 +20,21 @@
     border-radius: 50px;
     transition: 0.5s;
 }
+@media only screen  and (max-width: 687px){
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        height: 400px;
+        width: 100%;
+        border : 1px solid #ffffff;
+        backdrop-filter: blur(10px) ;
+        border-radius: 20px;
+        transition: 0.5s;
+        padding: 30px;
+    }
+}
 .wrapper:hover{
     box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
 }

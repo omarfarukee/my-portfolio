@@ -1,5 +1,4 @@
 .project-bg{
-    /* background-color: #1c1c1c; */
     background-color: black;
     height: 100%;
 }
@@ -34,7 +33,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .p-card .p-circle::before{
     content: '';
     position: absolute;
@@ -49,6 +47,8 @@
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
 }
+  
+
 .p-card:hover .p-circle::before{
     transition-delay: 0.5s;
     width: 100%;
@@ -124,10 +124,35 @@
 }
 
 @media only screen  and (max-width: 687px){
+    .p-card{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        border-radius: 20px;
+        transition-delay: 0.5s;
+        /* border: 2px solid #c70d0d; */
+        } 
     .p-card:hover{
-        width:400px;
+        width:340px;
         height: 400px;
         transition-delay: 0.5s;
+        right: 10%;
+    }
+    .p-card .p-circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
     }
     .p-card .p-circle::before{
         content: '';
@@ -142,18 +167,28 @@
         filter: drop-shadow(0 0 10px var(--clr))drop-shadow(0 0 40px var(--clr));
         transition: 0.5s, background 0.5s;
         transition-delay: 0.75s, 1s;
+        padding-left: 10%;
+        margin-left: 11%;
+    }
+    .p-card:hover .p-circle::before{
+        transition-delay: 0.5s;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        margin-right: 10%;
+        background: var(--clr)
     }
     .p-card .p-circle .p-logo{
         position: relative;
         transition: 0.5s;
         transition-delay:0.5s ;
-        right:10%;
+        right:12%;
         bottom:8%;
     }
     .p-card:hover .p-product-img{
         transition-delay: 0.75s;
         top:-8%;
-        left:50%;
+        left:61%;
         width:300px;
         transform: translate(-50%, -50%) scale(1) rotate(0deg);
     }
@@ -165,5 +200,11 @@
         transition: 0.5s;
         visibility: hidden;
         
+    }
+    .p-card:hover .p-content{
+        transition-delay: 0.75s;
+        opacity: 1;
+        visibility: visible;
+        left:11%;
     }
 }
