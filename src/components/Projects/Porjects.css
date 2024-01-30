@@ -1,8 +1,9 @@
-.project-bg{
+.project-bg {
     background-color: black;
     height: 100%;
 }
-.p-card{
+
+.p-card {
     position: relative;
     width: 250px;
     height: 250px;
@@ -12,17 +13,15 @@
     transition: 0.5s;
     border-radius: 20px;
     transition-delay: 0.5s;
+}
 
-}   
-/* ----------- */
-
-.p-card:hover{
-    width:650px;
+.p-card:hover {
+    width: 650px;
     height: 300px;
     transition-delay: 0.5s;
 }
-/* ----------- */
-.p-card .p-circle{
+
+.p-card .p-circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,7 +32,8 @@
     justify-content: center;
     align-items: center;
 }
-.p-card .p-circle::before{
+
+.p-card .p-circle::before {
     content: '';
     position: absolute;
     top: 0;
@@ -47,9 +47,8 @@
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
 }
-  
 
-.p-card:hover .p-circle::before{
+.p-card:hover .p-circle::before {
     transition-delay: 0.5s;
     width: 100%;
     height: 100%;
@@ -57,18 +56,19 @@
     background: var(--clr)
 }
 
-.p-card .p-circle .p-logo{
+.p-card .p-circle .p-logo {
     position: relative;
     transition: 0.5s;
-    transition-delay:0.5s ;
-    
+    transition-delay: 0.5s;
+
 }
-.p-card:hover .p-circle .p-logo{
+
+.p-card:hover .p-circle .p-logo {
     transform: scale(0);
     transition-delay: 0s;
 }
 
-.p-card .p-product-img{
+.p-card .p-product-img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,14 +77,15 @@
     transition: 0.5s ease-in-out;
 }
 
-.p-card:hover .p-product-img{
+.p-card:hover .p-product-img {
     transition-delay: 0.75s;
-    top:25%;
-    left:75%;
-    width:300px;
+    top: 25%;
+    left: 75%;
+    width: 300px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
-.p-card .p-product-img1{
+
+.p-card .p-product-img1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,39 +93,41 @@
     height: 150px;
     transition: 0.5s ease-in-out;
 }
-.p-card:hover .p-product-img1{
+
+.p-card:hover .p-product-img1 {
     transition-delay: 0.75s;
-    top:25%;
-    left:75%;
-    width:300px;
+    top: 25%;
+    left: 75%;
+    width: 300px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 }
 
-.p-card .p-content{
+.p-card .p-content {
     position: absolute;
     width: 50%;
     opacity: 0;
     left: 20%;
     transition: 0.5s;
     visibility: hidden;
-    
+
 }
- .p-card:hover .p-content{
+
+.p-card:hover .p-content {
     transition-delay: 0.75s;
     opacity: 1;
     visibility: visible;
-    left:1px;
+    left: 1px;
 }
 
 
 /* button */
 
-.b1{
+.b1 {
     background: #191919;
 }
 
-@media only screen  and (max-width: 687px){
-    .p-card{
+@media only screen and (max-width: 687px) {
+    .p-card {
         position: relative;
         width: 250px;
         height: 250px;
@@ -135,14 +138,16 @@
         border-radius: 20px;
         transition-delay: 0.5s;
         /* border: 2px solid #c70d0d; */
-        } 
-    .p-card:hover{
-        width:340px;
+    }
+
+    .p-card:hover {
+        width: 340px;
         height: 400px;
         transition-delay: 0.5s;
         right: 10%;
     }
-    .p-card .p-circle{
+
+    .p-card .p-circle {
         position: absolute;
         top: 0;
         left: 0;
@@ -154,7 +159,8 @@
         align-items: center;
         padding-left: 20%;
     }
-    .p-card .p-circle::before{
+
+    .p-card .p-circle::before {
         content: '';
         position: absolute;
         top: 0;
@@ -170,7 +176,8 @@
         padding-left: 10%;
         margin-left: 11%;
     }
-    .p-card:hover .p-circle::before{
+
+    .p-card:hover .p-circle::before {
         transition-delay: 0.5s;
         width: 100%;
         height: 100%;
@@ -178,33 +185,37 @@
         margin-right: 10%;
         background: var(--clr)
     }
-    .p-card .p-circle .p-logo{
+
+    .p-card .p-circle .p-logo {
         position: relative;
         transition: 0.5s;
-        transition-delay:0.5s ;
-        right:12%;
-        bottom:8%;
+        transition-delay: 0.5s;
+        right: 12%;
+        bottom: 8%;
     }
-    .p-card:hover .p-product-img{
+
+    .p-card:hover .p-product-img {
         transition-delay: 0.75s;
-        top:-8%;
-        left:61%;
-        width:300px;
+        top: -8%;
+        left: 61%;
+        width: 300px;
         transform: translate(-50%, -50%) scale(1) rotate(0deg);
     }
-    .p-card .p-content{
+
+    .p-card .p-content {
         position: absolute;
         width: 100%;
         opacity: 0;
         left: 20%;
         transition: 0.5s;
         visibility: hidden;
-        
+
     }
-    .p-card:hover .p-content{
+
+    .p-card:hover .p-content {
         transition-delay: 0.75s;
         opacity: 1;
         visibility: visible;
-        left:11%;
+        left: 11%;
     }
 }

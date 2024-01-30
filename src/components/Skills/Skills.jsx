@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 //eslint-disable-next-line no-unused-vars
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './Skills.css';
 import html from '../../assets/skills/pngwing.com.png'
@@ -18,6 +18,7 @@ import mongoo from '../../assets/skills/mongoose5_62x30_transparent.png'
 import nexts from '../../assets/skills/next.jpg'
 import dom from '../../assets/skills/dom-removebg-preview.png'
 import { SkillBar } from 'react-skillbars';
+import ScrollTrigger from "react-scroll-trigger";
 const SkillCard = ({ color, percentage, image, skillName }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -84,7 +85,9 @@ const Skills = () => {
       },
     },
   };
+  const [animationOn, setAnimationOn] = useState(false)
   return (
+    <ScrollTrigger onEnter={() => setAnimationOn(true)}>
     <div className=' skills-top skills-bg'>
       <div className='flex justify-center pt-5' data-aos="fade-up">
         <h1 className='text-3xl font-bold text-white'>Skills Analysis</h1>
@@ -94,6 +97,8 @@ const Skills = () => {
           <SkillBar skills={skills} height={40} colors={colors} className='border' />
         </div>
       </div>
+      {animationOn &&
+    
       <div className='mt-10 skill-container' data-aos="fade-up">
         <div className='flex justify-center gap-10'>
           <SkillCard color='#e14000' percentage='98' skillName='HTML' image={html} />
@@ -118,8 +123,9 @@ const Skills = () => {
           <SkillCard color='#d0d0d0' percentage='60' skillName='Next js' image={nexts} />
         </div>
 
-      </div>
+      </div>  }
     </div>
+    </ScrollTrigger>
   );
 };
 

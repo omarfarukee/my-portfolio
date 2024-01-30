@@ -9,7 +9,7 @@ import './About.css'
 import { FaHome } from 'react-icons/fa';
 const About = () => {
     return (
-        <div className="pb-10 a-back">
+        <div className="pt-20 pb-10 a-back">
             <div className='flex justify-center pt-12 mb-10' data-aos="fade-down">
                 <h1 className='text-3xl font-bold text-white'>About</h1>
             </div>
@@ -96,7 +96,7 @@ const About = () => {
                     </div>
                     <div className="">
                         <div className="flex justify-end ">
-                            <div className='mr-52'  data-aos="flip-left">
+                            <div className='mr-52' data-aos="flip-left">
                                 <img src={experience} className='w-80 moving-image' alt="" />
                             </div>
                             <div className="a-border h-96" data-aos="fade-up"></div>
@@ -125,7 +125,7 @@ const About = () => {
                                 <h1 className='w-0 border h-96'></h1>
                             </div>
                         </div>
-                        <div className="p-2 mt-12"  data-aos="flip-right">
+                        <div className="p-2 mt-12" data-aos="flip-right">
                             <div className="a-box a-color-box"
                             >
                                 <span></span>
@@ -144,13 +144,13 @@ const About = () => {
                                 <h1 className='w-0 border h-96'></h1>
                             </div>
                         </div>
-                        <div className="p-2 mt-12"  data-aos="flip-right">
+                        <div className="p-2 mt-12" data-aos="flip-right">
                             <div className="a-box b-color-box"
                             >
                                 <span></span>
                                 <div className='w-full p-5 a-content'>
-                                <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 font-bold text-orange-400 border-b-2'><FaUserGraduate />EDUCATION</h1></div>
-                                        <p>Having completed my Secondary School Certificate in 2017 and followed by the Higher Secondary Certificate in 2019, I am currently immersed in the academic pursuit of a Bachelor of Social Science (BSS) at the National University. Embarking on my second year, this educational journey not only shapes my intellectual growth but also fuels my curiosity about the intricate dynamics of the social sciences.</p>
+                                    <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 font-bold text-orange-400 border-b-2'><FaUserGraduate />EDUCATION</h1></div>
+                                    <p>Having completed my Secondary School Certificate in 2017 and followed by the Higher Secondary Certificate in 2019, I am currently immersed in the academic pursuit of a Bachelor of Social Science (BSS) at the National University. Embarking on my second year, this educational journey not only shapes my intellectual growth but also fuels my curiosity about the intricate dynamics of the social sciences.</p>
                                 </div>
 
                             </div>
@@ -163,12 +163,12 @@ const About = () => {
                                 <h1 className='w-0 border h-80'></h1>
                             </div>
                         </div>
-                        <div className="p-2 mt-12"  data-aos="flip-right">
+                        <div className="p-2 mt-12" data-aos="flip-right">
                             <div className="a-box c-color-box"
                             >
                                 <span></span>
                                 <div className='w-full p-5 a-content'>
-                                <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-purple-400 border-b-2'><GiPerpendicularRings />HOBBIES</h1></div>
+                                    <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-purple-400 border-b-2'><GiPerpendicularRings />HOBBIES</h1></div>
                                     <p>
                                         From an early age, drawing has been my creative refuge, allowing me to bring imagination to paper. I am also passionate about singing, enjoy outdoor activities like walking, and actively participate in sports like cricket, football, and badminton during my free time.</p>
                                 </div>
@@ -183,13 +183,13 @@ const About = () => {
                                 <h1 className='w-0 border h-80'></h1>
                             </div>
                         </div>
-                        <div className="p-2 mt-12"  data-aos="flip-right">
+                        <div className="p-2 mt-12" data-aos="flip-right">
                             <div className="a-box d-color-box"
                             >
                                 <span></span>
                                 <div className='w-full p-5 a-content'>
-                                <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-yellow-500 border-b-2'><FaUsersGear />EXPERIENCE</h1></div>
-                                        <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A one-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
+                                    <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-yellow-500 border-b-2'><FaUsersGear />EXPERIENCE</h1></div>
+                                    <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A one-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
                                 </div>
 
                             </div>

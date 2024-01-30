@@ -1,29 +1,35 @@
-.a-back{
+.a-back {
     background: black;
     font-weight: 700;
 }
-.a-border{
+
+.a-border {
     border: 2px solid whitesmoke;
 }
-.padding{
+
+.padding {
     padding-right: 115px;
 }
-.widths{
+
+.widths {
     width: 49.8%;
 }
-.a-box{
+
+.a-box {
     position: relative;
-    width:90%;
+    width: 90%;
     color: #ffff;
 }
-@media only screen  and (max-width: 687px){
-    .a-box{
+
+@media only screen and (max-width: 687px) {
+    .a-box {
         position: relative;
-        width:100%;
+        width: 100%;
         color: #ffff;
     }
 }
-.a-color-box::before{
+
+.a-color-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -32,7 +38,8 @@
     height: 100%;
     background: linear-gradient(45deg, #4dff03, #00d0ff);
 }
-.a-color-box::after{
+
+.a-color-box::after {
     content: '';
     position: absolute;
     top: 0;
@@ -42,7 +49,8 @@
     background: linear-gradient(315deg, #4dff03, #00d0ff);
     filter: blur(30px);
 }
-.b-color-box::before{
+
+.b-color-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -51,7 +59,8 @@
     height: 100%;
     background: linear-gradient(45deg, #ffbc00, #ff0058);
 }
-.b-color-box::after{
+
+.b-color-box::after {
     content: '';
     position: absolute;
     top: 0;
@@ -61,7 +70,8 @@
     background: linear-gradient(315deg, #ffbc00, #ff0058);
     filter: blur(30px);
 }
-.c-color-box::before{
+
+.c-color-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -70,7 +80,8 @@
     height: 100%;
     background: linear-gradient(45deg, #1bb0f5, #ff0059);
 }
-.c-color-box::after{
+
+.c-color-box::after {
     content: '';
     position: absolute;
     top: 0;
@@ -80,7 +91,8 @@
     background: linear-gradient(315deg, #1bb0f5, #ff0059);
     filter: blur(30px);
 }
-.d-color-box::before{
+
+.d-color-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -89,7 +101,8 @@
     height: 100%;
     background: linear-gradient(45deg, #e4f403, #ff5100);
 }
-.d-color-box::after{
+
+.d-color-box::after {
     content: '';
     position: absolute;
     top: 0;
@@ -100,25 +113,27 @@
     filter: blur(30px);
 }
 
-.a-box  span{
+.a-box span {
     position: absolute;
     top: 6px;
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
-.a-back span::before{
+
+.a-back span::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
-    background: rgba(225,225,225,0.1);
+    background: rgba(225, 225, 225, 0.1);
     pointer-events: none;
 }
+
 .a-box .a-content {
     position: relative;
     z-index: 10;
@@ -127,11 +142,18 @@
 .moving-image {
     animation: move 3s infinite ease-in-out;
     transform-origin: center bottom;
-  }
-  
-  @keyframes move {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-25px); }
-    100% { transform: translateY(0); }
-  }
-  
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

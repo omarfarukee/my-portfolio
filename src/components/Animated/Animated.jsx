@@ -69,27 +69,25 @@ const Animated = () => {
 
   return (
     <div>
-    <div className="relative" ref={comp}>
-      <div
-        id="intro-slider"
-        className="absolute top-0 left-0 z-10 flex flex-col w-full h-screen gap-10 p-10 tracking-tight bg-gray-50">
-        <h1 id="title-1" className="font-bold mt-36 lg:mt-0 text-7xl lg:text-9xl">Welcome</h1>
-        <h1 id="title-2" className="font-bold text-7xl lg:text-9xl">to my</h1>
-        <h1 id="title-3" className="font-bold text-7xl lg:text-9xl">Portfolio</h1>
-      </div>
-      
-      <div className="h-screen bg-gray-950">
-
-        <div className="flex justify-center place-items-center">
-          <h1 id="welcome" className="font-bold text-gray-100 text-9xl">
-            <div data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="300"
-              data-aos-offset="0" className="" id="animated-text" style={getAnimationStyles()}>Hi there</div>
-          </h1>
+      <div className="relative" ref={comp}>
+        <div
+          id="intro-slider"
+          className="absolute top-0 left-0 z-10 flex flex-col w-full h-screen gap-10 p-10 tracking-tight bg-gray-50">
+          <h1 id="title-1" className="font-bold mt-36 lg:mt-0 text-7xl lg:text-9xl">Welcome</h1>
+          <h1 id="title-2" className="font-bold text-7xl lg:text-9xl">to my</h1>
+          <h1 id="title-3" className="font-bold text-7xl lg:text-9xl">Portfolio</h1>
         </div>
-      </div>    
-    </div>
+        <div className="h-screen bg-black">
+          <div className="flex justify-center place-items-center">
+            <h1 id="welcome" className="font-bold text-gray-100 text-9xl">
+              <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" className="" id="animated-text" style={getAnimationStyles()}>Hi there</div>
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

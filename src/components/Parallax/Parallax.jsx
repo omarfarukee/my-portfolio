@@ -31,8 +31,8 @@ const Parallax = () => {
                             <img src={img} className='border-2 rounded-full w-72' alt="" />
                         </div>
                     </div>
-                    <div className='mt-32 lg:hidden'>
-                        <div className=''>
+                    <div className=' lg:hidden'>
+                        <div className='text-center'>
                             <h1 className='flex justify-center text-2xl'><TypeAnimation
                                 sequence={[
                                     'Hello, I am Omar Faruk',
@@ -46,9 +46,11 @@ const Parallax = () => {
                                 repeat={Infinity}
                             /></h1>
                             <h2 className='mt-5 text-lg font-extrabold cursor-pointer h2'><span>A</span> Full-Stack<span> Web developer</span></h2>
-                            <div className='mt-16 rounded-full'>
+                            <div className='rounded-full mt-14'>
                                 <img src={img} className='border-2 rounded-full w-72 small-pic' alt="" />
                             </div>
+                            <p className='mt-2 w-72'>
+                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and am still learning and will learn in the future.</p>
                         </div>
                     </div>
                 </div>
