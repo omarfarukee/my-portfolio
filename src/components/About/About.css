@@ -16,6 +16,13 @@
     width:90%;
     color: #ffff;
 }
+@media only screen  and (max-width: 687px){
+    .a-box{
+        position: relative;
+        width:100%;
+        color: #ffff;
+    }
+}
 .a-color-box::before{
     content: '';
     position: absolute;
