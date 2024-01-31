@@ -2,6 +2,10 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import '../home/Home.css'
 import gsap from "gsap";
+import { CgHello } from "react-icons/cg";
+import { FaArrowTurnUp } from "react-icons/fa6";
+
+
 const Animated = () => {
   const comp = useRef(null)
   useLayoutEffect(() => {
@@ -83,8 +87,11 @@ const Animated = () => {
               <div data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
-                data-aos-offset="0" className="" id="animated-text" style={getAnimationStyles()}>Hi there</div>
+                data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi there <span className="text-[100px] text-teal-300"><CgHello/></span></div>
             </h1>
+          </div>
+          <div className="fixed-button">
+           <a href=""><button className="p-2 font-bold text-black bg-white rounded-md border-arrow"><FaArrowTurnUp /></button></a> 
           </div>
         </div>
       </div>

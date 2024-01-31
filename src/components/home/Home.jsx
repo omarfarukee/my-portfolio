@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
   return (
     <div className="w-full">
-      <div className="">
+      <div className="" id='home'>
         <Animated></Animated>
       </div>
       <div>
