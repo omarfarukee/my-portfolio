@@ -126,6 +126,9 @@
     background: #191919;
 }
 
+.project-btn{
+    box-shadow: 0 0 10px #0ef, inset 0 0 20px #0ef;
+}
 @media only screen and (max-width: 687px) {
     .p-card {
         position: relative;

@@ -31,14 +31,14 @@ const Projects = () => {
         setFront('blcok')
         setFull('hidden')
     }
-    const [b1, setB1] = useState('w-40 p-3 font-bold rounded-lg b1')
+    const [b1, setB1] = useState('w-40 p-3 font-bold rounded-lg b1 project-btn transition duration-500')
     const [b2, setB2] = useState('w-40 p-3  rounded-lg')
     const button1 = () => {
         setB2('w-40 p-3 rounded-lg')
-        setB1('w-40 p-3 font-bold rounded-lg b1')
+        setB1('w-40 p-3 font-bold rounded-lg b1 project-btn transition duration-500')
     }
     const button2 = () => {
-        setB2('w-40 p-3 font-bold rounded-lg b1')
+        setB2('w-40 p-3 font-bold rounded-lg b1  project-btn transition duration-500')
         setB1('w-40 p-3 rounded-lg')
     }
 
@@ -62,10 +62,10 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                         <h1 className='flex justify-center text-2xl font-bold '>Features</h1>
                             <small className=''>
-                                <li>• Categorization and filtering options for streamlined navigation</li>
-                                <li>• Admin capabilities for adding, updating, and deleting products</li>
-                                <li>• Admin capabilities for adding, updating, and deleting products</li>
-                                <li>• Inclusion of a review system for buyers to share feedback.Multiple payment choices, including credit/debit cards, for flexibility.</li>
+                                <li> Categorization and filtering options for streamlined navigation</li>
+                                <li> Admin capabilities for adding, updating, and deleting products</li>
+                                <li> Admin capabilities for adding, updating, and deleting products</li>
+                                <li> Inclusion of a review system for buyers to share feedback.Multiple payment choices, including credit/debit cards, for flexibility.</li>
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
@@ -85,11 +85,11 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                             <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
                             <small className='text-white'>
-                                <li>• There are three types of products collection, user have 3 roles seller , buyer and admin</li>
-                                <li>• Sellers can add products. Buyers can book and pay</li>
-                                <li>• Admin can see all users and can delete user</li>
-                                <li>• Seller can advertise his new added products</li>
-                                <li>• User must be logged in</li>
+                                <li> There are three types of products collection, user have 3 roles seller , buyer and admin</li>
+                                <li> Sellers can add products. Buyers can book and pay</li>
+                                <li> Admin can see all users and can delete user</li>
+                                <li> Seller can advertise his new added products</li>
+                                <li> User must be logged in</li>
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://bike-frenzy-7b4f7.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
@@ -110,10 +110,10 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                             <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
                             <small className='text-white'>
-                                <li>• User can see the items he wants to know</li>
-                                <li>• Can review the specific item he wants to</li>
-                                <li>• User can add item</li>
-                                <li>• User should be logged in before reviewing or adding</li>
+                                <li> User can see the items he wants to know</li>
+                                <li> Can review the specific item he wants to</li>
+                                <li> User can add item</li>
+                                <li> User should be logged in before reviewing or adding</li>
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://homes-food.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
@@ -138,9 +138,9 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                             <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
                             <small className='text-white'>
-                                <li>• The site is comport to Visit and its UI is very <span className='ml-2'>massive .</span></li>
-                                <li>• In here we gave you Some common quiz that you <span className='ml-2'>can justify yourself in this way how you good at <span className='ml-2'>his.</span></span> </li>
-                                <li>• The site is stunning for you .</li>
+                                <li> The site is comport to Visit and its UI is very <span className='ml-2'>massive .</span></li>
+                                <li> In here we gave you Some common quiz that you <span className='ml-2'>can justify yourself in this way how you good at <span className='ml-2'>his.</span></span> </li>
+                                <li> The site is stunning for you .</li>
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-purple-900 rounded-md'><a href="https://cosmic-quick-quiz-detector-qui-55c193.netlify.app/home" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
@@ -157,7 +157,7 @@ const Projects = () => {
                         <div className='p-3 p-content'>
                             <h1 className='flex justify-center text-2xl font-bold text-white'>Features</h1>
                             <small className='text-white'>
-                                <li>• Its a one landig page design</li>
+                                <li> Its a one landig page design</li>
                                
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>

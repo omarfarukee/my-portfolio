@@ -1,0 +1,26 @@
+.face:hover{
+    transition: 0.5s;
+    color:#4586f0;
+}
+.whats:hover{
+    transition: 0.5s;
+    color:#45f078;
+}
+.Linkedin:hover{
+    transition: 0.5s;
+    color:#0077b5 ;
+}
+.git:hover{
+    transition: 0.5s;
+    color:gray ;
+}
+.mail:hover{
+    transition: 0.5s;
+    color:rgb(248, 127, 127) ;
+}
+.get{
+    text-shadow: 0 0 10px #47b8bc,
+    0 0 10px #47b8bc,
+    0 0 20px #47b8bc,
+    0 0 30px #47b8bc 
+}
