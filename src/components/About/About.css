@@ -20,6 +20,18 @@
     width: 90%;
     color: #ffff;
 }
+.num1{
+    box-shadow: 0 0 10px rgba(43, 255, 0, 0.808), inset 0 0 20px rgba(51, 255, 0, 0.836);
+}
+.num2{
+    box-shadow: 0 0 10px rgba(255, 153, 0, 0.952), inset 0 0 20px rgba(255, 187, 0, 0.836);
+}
+.num3{
+    box-shadow: 0 0 10px rgba(162, 0, 255, 0.952), inset 0 0 20px rgba(153, 0, 255, 0.836);
+}
+.num4{
+    box-shadow: 0 0 10px rgba(255, 230, 0, 0.952), inset 0 0 20px rgba(238, 255, 0, 0.836);
+}
 
 @media only screen and (max-width: 687px) {
     .a-box {

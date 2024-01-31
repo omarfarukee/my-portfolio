@@ -16,7 +16,7 @@ const About = () => {
             <div className='hidden lg:block'>
                 <div>
                     <div className="flex justify-end w-3/5 mb-2 padding">
-                        <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">1</h1>
+                        <h1 className="w-10 p-2 font-bold text-center bg-white rounded-full num1" data-aos="zoom-in">1</h1>
                     </div>
                     <div className="flex pt-2 ">
                         <div className="w-1/2 p-3" data-aos="zoom-in-right">
@@ -39,7 +39,7 @@ const About = () => {
                 </div>
                 <div>
                     <div className="flex justify-end w-3/5 mt-3 mb-2 padding">
-                        <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">2</h1>
+                        <h1 className="w-10 p-2 font-bold text-center bg-white rounded-full num2" data-aos="zoom-in">2</h1>
 
                     </div>
                     <div className="">
@@ -65,7 +65,7 @@ const About = () => {
                 </div>
                 <div>
                     <div className="flex justify-end w-3/5 mb-2 padding">
-                        <h1 className="w-10 p-2 mt-3 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">3</h1>
+                        <h1 className="w-10 p-2 mt-3 font-bold text-center bg-white rounded-full num3" data-aos="zoom-in">3</h1>
                     </div>
                     <div className="flex pt-2">
                         <div className="w-1/2 p-3" data-aos="zoom-in-right">
@@ -91,7 +91,7 @@ const About = () => {
                 </div>
                 <div>
                     <div className="flex justify-end w-3/5 mt-3 mb-2 padding">
-                        <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">4</h1>
+                        <h1 className="w-10 p-2 text-center bg-white rounded-full num4" data-aos="zoom-in">4</h1>
 
                     </div>
                     <div className="">
@@ -120,7 +120,7 @@ const About = () => {
                 <div>
                     <div className='flex items-center mb-2'>
                         <div className=''>
-                            <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">1</h1>
+                            <h1 className="w-10 p-2 text-center bg-white rounded-full num1 rounded-ful" data-aos="zoom-in">1</h1>
                             <div className='mt-5 ml-5 ' data-aos="fade-up">
                                 <h1 className='w-0 border h-96'></h1>
                             </div>
@@ -139,7 +139,7 @@ const About = () => {
                     </div>
                     <div className='flex items-center mb-2'>
                         <div className=''>
-                            <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">2</h1>
+                            <h1 className="w-10 p-2 text-center bg-white rounded-full num2 rounded-ful" data-aos="zoom-in">2</h1>
                             <div className='mt-5 ml-5 ' data-aos="fade-up">
                                 <h1 className='w-0 border h-96'></h1>
                             </div>
@@ -158,7 +158,7 @@ const About = () => {
                     </div>
                     <div className='flex mb-2'>
                         <div className=''>
-                            <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">3</h1>
+                            <h1 className="w-10 p-2 text-center bg-white rounded-full num3" data-aos="zoom-in">3</h1>
                             <div className='mt-5 ml-5 ' data-aos="fade-up">
                                 <h1 className='w-0 border h-80'></h1>
                             </div>
@@ -178,7 +178,7 @@ const About = () => {
                     </div>
                     <div className='flex mb-2'>
                         <div className=''>
-                            <h1 className="w-10 p-2 text-center text-white rounded-full bg-slate-950" data-aos="zoom-in">4</h1>
+                            <h1 className="w-10 p-2 text-center bg-white rounded-full num4" data-aos="zoom-in">4</h1>
                             <div className='mt-5 ml-5 ' data-aos="fade-up">
                                 <h1 className='w-0 border h-80'></h1>
                             </div>

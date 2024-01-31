@@ -87,7 +87,7 @@ const Animated = () => {
               <div data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
-                data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi there <span className="text-[100px] text-teal-300"><CgHello/></span></div>
+                data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi There <span className="text-[100px] text-teal-300"><CgHello/></span></div>
             </h1>
           </div>
           <div className="fixed-button">

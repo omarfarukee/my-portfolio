@@ -4,7 +4,7 @@ import './App.css'
 import Home from './components/home/Home';
 function App() {
   return (
-    <div>
+    <div className='varela-round-regular'>
       <Toaster />
       <Home></Home>
     </div>
