@@ -4,7 +4,7 @@ import '../home/Home.css'
 import gsap from "gsap";
 import { CgHello } from "react-icons/cg";
 import { FaArrowTurnUp, FaRegFilePdf } from "react-icons/fa6";
-
+import resume from '.././../assets/Resume/Omar Faruk.Resume.pdf'
 
 const Animated = () => {
   const comp = useRef(null)
@@ -92,7 +92,8 @@ const Animated = () => {
           </div>
           <div>
             <div title='Download resume' className="resume">
-              <a href=''
+              <a href={resume}
+                download='Omar Faruk.Resume.pdf'
                 className="text-center">
                 <span className='flex flex-col gap-0 p-2 text-white bg-transparent letters'>
                 <small>R</small>
