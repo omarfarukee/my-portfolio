@@ -103,6 +103,34 @@
     right: 20px;
     z-index: 999;
   }
+  .resume{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 999;
+  }
+  @media only screen  and (max-width: 687px){
+    .fixed-button {
+      position: fixed;
+      bottom: 20px;
+      right: 5px;
+      z-index: 999;
+    }
+    .resume{
+      position: fixed;
+      bottom: 70px;
+      right: 5px;
+      z-index: 999;
+    }
+  }
+  .letters{
+    border-radius: 20px;
+    backdrop-filter: blur(10px) ;
+    text-shadow: 0 0 10px #47b8bc,
+    0 0 10px #47b8bc,
+    0 0 20px #47b8bc,
+    0 0 30px #47b8bc 
+  }
 .border-arrow{
   border: 1px solid white;
   box-shadow: 0 0 10px #0ef, inset 0 0 20px #0ef;

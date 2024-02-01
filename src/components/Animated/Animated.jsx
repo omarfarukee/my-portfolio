@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import '../home/Home.css'
 import gsap from "gsap";
 import { CgHello } from "react-icons/cg";
-import { FaArrowTurnUp } from "react-icons/fa6";
+import { FaArrowTurnUp, FaRegFilePdf } from "react-icons/fa6";
 
 
 const Animated = () => {
@@ -87,11 +87,27 @@ const Animated = () => {
               <div data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="300"
-                data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi There <span className="text-[100px] text-teal-300"><CgHello/></span></div>
+                data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi There <span className="text-[100px] text-teal-300"><CgHello /></span></div>
             </h1>
           </div>
+          <div>
+            <div title='Download resume' className="resume">
+              <a href=''
+                className="text-center">
+                <span className='flex flex-col gap-0 p-2 text-white bg-transparent letters'>
+                <small>R</small>
+                <small>E</small>
+                <small>S</small>
+                <small>U</small>
+                <small>M</small>
+                <small>E</small>
+                <FaRegFilePdf className="text-lg text-cyan-200"></FaRegFilePdf>
+                </span>
+              </a>
+            </div>
+          </div>
           <div className="fixed-button">
-           <a href=""><button className="p-2 font-bold text-black bg-white rounded-md border-arrow"><FaArrowTurnUp /></button></a> 
+            <a href=""><button className="p-2 font-bold text-black bg-white rounded-md border-arrow"><span ><FaArrowTurnUp className="animate-bounce" /></span></button></a>
           </div>
         </div>
       </div>
