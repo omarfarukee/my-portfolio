@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import './Parallax.css'
 import 'aos/dist/aos.css';
 import img from '../../assets/image/imgggg.d6e8e528c9b80d07b72d.jpg'
@@ -25,7 +26,7 @@ const Parallax = () => {
                             /></h1>
                             <h2 className='font-extrabold cursor-pointer lg:text-3xl h2'><span>A</span> Full-Stack<span> Web developer</span></h2>
                             <p className='mt-10'>
-                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and am still learning and will learn in the future.</p>
+                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and I'm still learning and will learn in the future.</p>
                         </div>
                         <div className='rounded-full'>
                             <img src={img} className='border-2 rounded-full w-72' alt="" />
@@ -50,7 +51,7 @@ const Parallax = () => {
                                 <img src={img} className='border-2 rounded-full w-72 small-pic' alt="" />
                             </div>
                             <p className='mt-2 w-72'>
-                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and am still learning and will learn in the future.</p>
+                                Becoming a good minded developer requires the right intention, hard work and practice. So for almost a long year I was able to identify myself as a Full-Stack web developer by adopting that consistency. I have learned a lot in my journey as a developer and I'm still learning and will learn in the future.</p>
                         </div>
                     </div>
                 </div>

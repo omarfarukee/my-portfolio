@@ -69,10 +69,10 @@ const Projects = () => {
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://gadget-sailor-frontend.vercel.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://github.com/RakibulHasan2/gadget-sailor-frontend" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
                             <div className='flex justify-center'>
-                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                                <button className='w-32 p-1 bg-blue-900 rounded-md'><a href="https://github.com/RakibulHasan2/gadget-sailor-backend" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
                             </div>
                         </div>
                         <img src={img1} alt="" className='p-product-img' />
