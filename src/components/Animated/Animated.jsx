@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { CgHello } from "react-icons/cg";
 import { FaArrowTurnUp, FaRegFilePdf } from "react-icons/fa6";
 import resume from '.././../assets/Resume/Omar Faruk.Resume.pdf'
+import Navber from "../../Navber/Navber";
 
 const Animated = () => {
   const comp = useRef(null)
@@ -91,18 +92,21 @@ const Animated = () => {
             </h1>
           </div>
           <div>
+            <Navber />
+          </div>
+          <div>
             <div title='Download resume' className="resume">
               <a href={resume}
                 download='Omar Faruk.Resume.pdf'
                 className="text-center">
                 <span className='flex flex-col gap-0 p-2 text-white bg-transparent letters'>
-                <small>R</small>
-                <small>E</small>
-                <small>S</small>
-                <small>U</small>
-                <small>M</small>
-                <small>E</small>
-                <FaRegFilePdf className="text-lg text-cyan-200"></FaRegFilePdf>
+                  <small>R</small>
+                  <small>E</small>
+                  <small>S</small>
+                  <small>U</small>
+                  <small>M</small>
+                  <small>E</small>
+                  <FaRegFilePdf className="text-lg text-cyan-200"></FaRegFilePdf>
                 </span>
               </a>
             </div>
