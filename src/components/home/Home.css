@@ -116,13 +116,13 @@
   @media only screen  and (max-width: 687px){
     .fixed-button {
       position: fixed;
-      bottom: 65px;
+      bottom: 82px;
       right: 5px;
       z-index: 999;
     }
     .resume{
       position: fixed;
-      bottom: 100px;
+      bottom: 120px;
       right: 5px;
       z-index: 999;
     }

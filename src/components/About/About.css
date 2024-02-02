@@ -32,7 +32,12 @@
 .num4{
     box-shadow: 0 0 10px rgba(255, 230, 0, 0.952), inset 0 0 20px rgba(238, 255, 0, 0.836);
 }
-
+.about-text{
+    text-shadow: 0 0 10px #47b8bc,
+    0 0 10px #47b8bc,
+    0 0 20px #47b8bc,
+    0 0 30px #47b8bc 
+}
 @media only screen and (max-width: 687px) {
     .a-box {
         position: relative;

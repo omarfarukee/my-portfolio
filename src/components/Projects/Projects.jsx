@@ -44,10 +44,10 @@ const Projects = () => {
 
     return (
         <div className='project-bg'>
-            <div className='flex justify-center pt-12' data-aos="fade-up">
-                <h1 className='text-3xl font-bold text-white'>My Projects</h1>
+            <div className='flex justify-center pt-16' data-aos="fade-up">
+                <h1 className='text-3xl font-bold text-white project-text'>My Projects</h1>
             </div>
-            <div className='flex justify-center mt-5 text-white'>
+            <div className='flex justify-center mt-10 text-white'>
                 <div className='flex gap-6'>
                     <button onClick={() => { fullStack(); button1() }} className={b1}>Full-Stack</button>
                     <button onClick={() => { frontEnd(); button2() }} className={b2}>Front-End</button>

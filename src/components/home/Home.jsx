@@ -11,6 +11,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Animated from "../Animated/Animated";
 import Counter from '../Counter/Counter';
+import Footer from '../../Footer/Footer'
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -42,11 +43,14 @@ const Home = () => {
       <div id="about">
         <About></About>
       </div>
-      <div>
+      <div id='counter'>
         <Counter></Counter>
       </div>
-      <div id="contact" className="">
+      <div id="mail" className="">
         <Contact></Contact>
+      </div>
+      <div id='footer'>
+        <Footer></Footer>
       </div>
     </div>
   );

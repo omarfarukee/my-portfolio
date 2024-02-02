@@ -118,7 +118,12 @@
     visibility: visible;
     left: 1px;
 }
-
+.project-text{
+    text-shadow: 0 0 10px #47b8bc,
+    0 0 10px #47b8bc,
+    0 0 20px #47b8bc,
+    0 0 30px #47b8bc 
+}
 
 /* button */
 

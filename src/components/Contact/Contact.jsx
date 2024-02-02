@@ -51,7 +51,7 @@ const Contact = () => {
 
   return (
     <div className="c-back">
-      <div className='flex justify-center pt-12 mb-10 text-3xl font-bold text-white'data-aos="fade-down">
+      <div className='flex justify-center pt-12 mb-10 text-3xl font-bold text-white mail-text'data-aos="fade-down">
         Leave a Message
       </div>
       <div className='flex justify-evenly'>

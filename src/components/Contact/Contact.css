@@ -20,6 +20,12 @@
     border-radius: 50px;
     transition: 0.5s;
 }
+.mail-text{
+    text-shadow: 0 0 10px #47b8bc,
+    0 0 10px #47b8bc,
+    0 0 20px #47b8bc,
+    0 0 30px #47b8bc 
+}
 @media only screen  and (max-width: 687px){
     .wrapper{
         display: flex;

@@ -14,7 +14,7 @@ const Counter = () => {
         <ScrollTrigger onEnter={() => setCounterOn(true)}>
             <div className="pt-10 pb-10 bg-black">
                 <div className='flex justify-center pt-12 mb-10' data-aos="fade-down">
-                    <h1 className='text-3xl font-bold text-white'>Dedication</h1>
+                    <h1 className='text-3xl font-bold text-white counter-text'>Dedication</h1>
                 </div>
                 <div className="items-center justify-around lg:p-5 lg:flex lg:h-96"data-aos='fade-up'>
                     <div className="ml-8 lg:ml-0">

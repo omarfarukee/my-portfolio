@@ -5,6 +5,8 @@ import { BiSolidUserPin } from "react-icons/bi";
 import { FaProjectDiagram } from "react-icons/fa";
 import { BsBarChartLineFill } from "react-icons/bs";
 import { BiSolidMessageDots } from "react-icons/bi";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaUserClock } from "react-icons/fa6";
 
 const Navber = () => {
   useEffect(() => {
@@ -47,11 +49,13 @@ const Navber = () => {
     <div className='mt-6'>
       <div>
         <ul className=''>
-          <li><a href='#about'><span><BiSolidUserPin /></span><text>About</text></a></li>
-          <li><a href='#projects'><span ><FaProjectDiagram /></span><text>Projects</text></a></li>
-          <li className='active'><a href='#home'><span><FaHome /></span><text>HOME</text></a></li>
-          <li><a href='#skills'><span><BsBarChartLineFill /></span><text>Skills</text></a></li>
-          <li><a href='#contact'><span><BiSolidMessageDots /></span><text>Contact</text></a></li>
+          <li><a href='#about' title='about'><span><BiSolidUserPin /></span><text>About</text></a></li>
+          <li><a href='#projects' title='Projects'><span ><FaProjectDiagram /></span><text>Projects</text></a></li>
+          <li><a href='#skills' title='Skills'><span><BsBarChartLineFill /></span><text>Skills</text></a></li>
+          <li className='active' title='Home'><a href='#home'><span><FaHome /></span><text>HOME</text></a></li>
+            <li><a href='#counter' title='Dedications'><span><FaUserClock /></span><text>About</text></a></li> 
+          <li><a href='#mail' title='send-mail'><span><BiSolidMessageDots /></span><text>Message</text></a></li>   
+          <li><a href='#footer' title='Contact'><span><BsWhatsapp /></span><text>Contact</text></a></li>
           <div id='marker'><span></span></div>
         </ul>
       </div>

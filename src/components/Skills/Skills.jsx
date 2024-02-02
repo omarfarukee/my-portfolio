@@ -90,7 +90,7 @@ const Skills = () => {
     <ScrollTrigger onEnter={() => setAnimationOn(true)}>
       <div className=' skills-top skills-bg'>
         <div className='flex justify-center pt-5' data-aos="fade-up">
-          <h1 className='text-3xl font-bold text-white'>Skills Analysis</h1>
+          <h1 className='text-3xl font-bold text-white skills-texts'>Skills Analysis</h1>
         </div>
         <div className='block mt-12 lg:hidden'>
           <div data-aos='fade-down' className='lg:w-96'>
