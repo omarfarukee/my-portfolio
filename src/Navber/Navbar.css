@@ -6,7 +6,7 @@ ul{
     justify-content: center;
     align-items: center;
     background: transparent;
-    backdrop-filter: blur(10px) ;
+    backdrop-filter: blur(20px) ;
     border-radius: 10px;
     width: 400px;
     height: 50px;
@@ -50,9 +50,10 @@ ul li.active a span{
     border-radius: 10px;
     border-top: 2px solid #68faff;
     border-left: 2px solid #68faff;
-    box-shadow: 0 0 0 3px black,
-    0 2px 0 0px #68faff;
+    /* box-shadow: 0 0 0 3px black,
+    0 2px 0 0px #68faff; */
     transition: 0.5s;
+    box-shadow: 0 0 10px #0ef, inset 0 0 20px #0ef;
 
 }
 #marker::before{
@@ -84,11 +85,12 @@ ul li.active a span{
         left: -10%;
         height: 25px;
         background:#94f8ff;
-        box-shadow: 0 0 0 3px black,
-        0 -2px 0 0px #68faff;
+        /* box-shadow: 0 0 0 3px black,
+        0 -2px 0 0px #68faff; */
         border-radius: 5px;
         border-right: 1px solid #68faff;
         border-bottom: 1px solid #68faff;
+        box-shadow: 0 0 10px #0ef, inset 0 0 20px #0ef;
 }
 ul li text{
     position: absolute;
@@ -98,6 +100,7 @@ ul li text{
     font-size: 0.6em;
     transition: 0.5s;
     text-transform: uppercase;
+    color: white;
 }
 ul li.active text{
     font-weight: 700;

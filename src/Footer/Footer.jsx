@@ -14,7 +14,7 @@ const Footer = () => {
                 <img className='' src={footer} alt="" />
             </div>
             <div className=''>
-                <div className='lg:ml-20'>
+                <div className='pb-20 lg:ml-20'>
                     <h1 className='text-5xl font-bold text-white ml-7 get lg:ml-0' data-aos="fade-up">Get in Touch</h1>
                     <div data-aos="fade-down">
                         <div className='mt-10 w-36'>
@@ -46,7 +46,7 @@ const Footer = () => {
                                     <p className=' whats'>
                                         <span className='flex items-center text-3xl'>
                                             <FaWhatsapp />
-                                            <span className='text-lg'>-What's App: +880 1943797513</span>
+                                            <span className='text-lg'>-What'sApp: +880 1943797513</span>
                                         </span>
                                     </p>
 

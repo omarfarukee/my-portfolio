@@ -99,7 +99,7 @@ const Skills = () => {
         </div>
 
 
-        <div className='mt-10 skill-container'>
+        <div className='mt-10 skill-container' data-aos='fade-down'>
           {animationOn &&
             <div>
               <div className='flex justify-center gap-10'>

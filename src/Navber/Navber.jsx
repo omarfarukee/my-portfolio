@@ -1,6 +1,10 @@
 import  { useEffect } from 'react';
 import { FaHome } from 'react-icons/fa';
 import './Navbar.css';
+import { BiSolidUserPin } from "react-icons/bi";
+import { FaProjectDiagram } from "react-icons/fa";
+import { BsBarChartLineFill } from "react-icons/bs";
+import { BiSolidMessageDots } from "react-icons/bi";
 
 const Navber = () => {
   useEffect(() => {
@@ -22,7 +26,10 @@ const Navber = () => {
         moveInDetector(e.target);
       });
     });
-
+    const homeItem = document.querySelector('ul li.active');
+    if (homeItem) {
+      moveInDetector(homeItem);
+    }
     list.forEach(item => item.addEventListener('click', activeLink));
 
     return () => {
@@ -39,12 +46,12 @@ const Navber = () => {
   return (
     <div className='mt-6'>
       <div>
-        <ul className='p-5'>
-          <li><a href='#about'><span><FaHome /></span><text>About</text></a></li>
-          <li><a href='#projects'><span ><FaHome /></span><text>Projects</text></a></li>
+        <ul className=''>
+          <li><a href='#about'><span><BiSolidUserPin /></span><text>About</text></a></li>
+          <li><a href='#projects'><span ><FaProjectDiagram /></span><text>Projects</text></a></li>
           <li className='active'><a href='#home'><span><FaHome /></span><text>HOME</text></a></li>
-          <li><a href='#skills'><span><FaHome /></span><text>Skills</text></a></li>
-          <li><a href='#contact'><span><FaHome /></span><text>Contact</text></a></li>
+          <li><a href='#skills'><span><BsBarChartLineFill /></span><text>Skills</text></a></li>
+          <li><a href='#contact'><span><BiSolidMessageDots /></span><text>Contact</text></a></li>
           <div id='marker'><span></span></div>
         </ul>
       </div>
