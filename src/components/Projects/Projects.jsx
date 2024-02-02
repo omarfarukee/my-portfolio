@@ -93,10 +93,10 @@ const Projects = () => {
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://bike-frenzy-7b4f7.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://github.com/omarfarukee/frenzy-Bike" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
                             <div className='flex justify-center'>
-                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                                <button className='w-32 p-1 bg-green-700 rounded-md'><a href="https://github.com/omarfarukee/frenzy-bike-server" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
                             </div>
 
                         </div>
@@ -117,10 +117,10 @@ const Projects = () => {
                             </small>
                             <div className='flex justify-between gap-2 p-2 lg:justify-start'>
                                 <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://homes-food.web.app/" className='flex items-center justify-center gap-2 text-white' target='_blank'><FaEye />Link</a></button>
-                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
+                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://github.com/omarfarukee/Home-s-Food" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Client Repo</a></button>
                             </div>
                             <div className='flex justify-center'>
-                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="" className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
+                                <button className='w-32 p-1 bg-green-900 rounded-md'><a href="https://github.com/omarfarukee/Homes-food-server" target='_blank' className='flex items-center justify-center gap-2 text-white'><FaGithub />Server Repo</a></button>
                             </div>
                         </div>
                         <img src={img5} alt="" className='p-product-img' />

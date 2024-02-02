@@ -53,7 +53,7 @@ const Navber = () => {
           <li><a href='#projects' title='Projects'><span ><FaProjectDiagram /></span><text>Projects</text></a></li>
           <li><a href='#skills' title='Skills'><span><BsBarChartLineFill /></span><text>Skills</text></a></li>
           <li className='active' title='Home'><a href='#home'><span><FaHome /></span><text>HOME</text></a></li>
-            <li><a href='#counter' title='Dedications'><span><FaUserClock /></span><text>About</text></a></li> 
+            <li><a href='#counter' title='Dedications'><span><FaUserClock /></span><text>efforts</text></a></li> 
           <li><a href='#mail' title='send-mail'><span><BiSolidMessageDots /></span><text>Message</text></a></li>   
           <li><a href='#footer' title='Contact'><span><BsWhatsapp /></span><text>Contact</text></a></li>
           <div id='marker'><span></span></div>
