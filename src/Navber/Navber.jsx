@@ -37,14 +37,14 @@ const Navber = () => {
   }, []);
 
   return (
-    <div className='flex justify-center mt-10'>
+    <div className='mt-6'>
       <div>
         <ul className='p-5'>
-          <li><a ><span><FaHome /></span><text>HOME</text></a></li>
-          <li><a><span><FaHome /></span><text>HOME</text></a></li>
-          <li className='active'><a><span><FaHome /></span><text>HOME</text></a></li>
-          <li><a ><span><FaHome /></span><text>HOME</text></a></li>
-          <li><a><span><FaHome /></span><text>HOME</text></a></li>
+          <li><a href='#about'><span><FaHome /></span><text>About</text></a></li>
+          <li><a href='#projects'><span ><FaHome /></span><text>Projects</text></a></li>
+          <li className='active'><a href='#home'><span><FaHome /></span><text>HOME</text></a></li>
+          <li><a href='#skills'><span><FaHome /></span><text>Skills</text></a></li>
+          <li><a href='#contact'><span><FaHome /></span><text>Contact</text></a></li>
           <div id='marker'><span></span></div>
         </ul>
       </div>

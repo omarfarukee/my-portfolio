@@ -91,7 +91,7 @@ const Animated = () => {
                 data-aos-offset="0" className="items-center lg:flex" id="animated-text" style={getAnimationStyles()}>Hi There <span className="text-[100px] text-teal-300"><CgHello /></span></div>
             </h1>
           </div>
-          <div>
+          <div className="navbar">
             <Navber />
           </div>
           <div>

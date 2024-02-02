@@ -5,11 +5,11 @@ ul{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #242424;
-    border-radius: 30px;
-    position: fixed;
-    left:0;
-    z-index: 9999;
+    background: transparent;
+    backdrop-filter: blur(10px) ;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
 }
 ul li{
     list-style: none;
@@ -20,87 +20,88 @@ ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    z-index:10000;
-    color: #444;
+    width: 50px;
+    height: 50px;
+    z-index:1000;
+    color: #fff;
 }
 
 ul li a span{
-    font-size: 2em;
+    font-size: 1.2em;
     transition: 0.5s;
     pointer-events: none;
 }
 ul li:hover a span{
-    color: #c7f80d;
-    filter: drop-shadow(0 0 15px #c7f80d);
+    color: #94f8ff;
+    filter: drop-shadow(0 0 20px #05f8f8);
 }
 
 ul li.active a span{
-   color: #c7f80d;
-   filter: drop-shadow(0 0 15px #c7f80d);
-   transform: translateY(-50px);
+   color: #000000;
+   filter: drop-shadow(0 0 15px #68faff);
+   transform: translateY(-27px);
 }
 #marker{
     position: absolute;
-    top: -30px;
-    width: 80px;
-    height: 80px;
-    background: #55650a;
-    border-radius: 20px;
-    border-top: 2px solid #c7f80d;
-    border-left: 2px solid #c7f80d;
-    box-shadow: 0 0 0 10px black,
-    0 2px 0 9px #c7f80d;
+    top: -20px;
+    width: 20px;
+    height: 40px;
+    background: #94f8ff;
+    border-radius: 10px;
+    border-top: 2px solid #68faff;
+    border-left: 2px solid #68faff;
+    box-shadow: 0 0 0 3px black,
+    0 2px 0 0px #68faff;
     transition: 0.5s;
 
 }
 #marker::before{
     content: '';
     position: absolute;
-    top: 29px;
+    top: 30px;
     left: -30px;
     width: 20px;
     height: 20px;
     background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 4px -4px 0 4px black;
+    border-top-right-radius: 5px;
+    /* box-shadow: 4px -4px 0 4px black; */
 }
 #marker::after{
     content: '';
     position: absolute;
-    top: 29px;
+    top: 20px;
     right: -30px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -4px -4px 0 4px black;
+    /* box-shadow: -4px -4px 0 4px black; */
 }
 #marker span{
         position: absolute;
-        top: 120px;
+        top: 48px;
         width: 120%;
         left: -10%;
-        height: 30px;
-        background:#55650a;
-        box-shadow: 0 0 0 10px black,
-        0 -2px 0 9px #c7f80d;
-        border-radius: 20px;
-        border-right: 1px solid #c7f80d;
-        border-bottom: 1px solid #c7f80d;
+        height: 25px;
+        background:#94f8ff;
+        box-shadow: 0 0 0 3px black,
+        0 -2px 0 0px #68faff;
+        border-radius: 5px;
+        border-right: 1px solid #68faff;
+        border-bottom: 1px solid #68faff;
 }
 ul li text{
     position: absolute;
     pointer-events: none;
-    transform: translateY(50px);
+    transform: translateY(20px);
     opacity: 0;
-    font-size: 0.8em;
+    font-size: 0.6em;
     transition: 0.5s;
     text-transform: uppercase;
 }
 ul li.active text{
+    font-weight: 700;
     opacity: 1;
-    color: #c7f80d;
-    filter: drop-shadow(0 0 10px #c7f80d);
+    color: black;
+    filter: drop-shadow(0 0 10px #68faff);
 }
