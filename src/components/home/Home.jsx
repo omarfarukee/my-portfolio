@@ -12,6 +12,8 @@ import Contact from "../Contact/Contact";
 import Animated from "../Animated/Animated";
 import Counter from '../Counter/Counter';
 import Footer from '../../Footer/Footer'
+import ScrollToTop from 'react-scroll-to-top';
+import { FaArrowTurnUp } from 'react-icons/fa6';
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -26,6 +28,11 @@ const Home = () => {
   }, []);
   return (
     <div className="w-full">
+      <ScrollToTop
+        className='hidden lg:block'
+      smooth top="500" 
+        component={<button className="p-3 font-bold text-black bg-white rounded-md border-arrow"><span ><FaArrowTurnUp className="animate-bounce" /></span></button>}
+        width="50"/>
       <div className="" id='home'>
         <Animated></Animated>
       </div>

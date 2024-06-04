@@ -106,7 +106,7 @@ const About = () => {
                                     <span></span>
                                     <div className='p-5 a-content h-60'>
                                         <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-yellow-500 border-b-2'><FaUsersGear />EXPERIENCE</h1></div>
-                                        <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A one-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
+                                        <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A two-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
                                     </div>
 
                                 </div>
@@ -189,7 +189,7 @@ const About = () => {
                                 <span></span>
                                 <div className='w-full p-5 a-content'>
                                     <div className='mb-2 text-3xl'><h1 className='flex items-center gap-2 text-yellow-500 border-b-2'><FaUsersGear />EXPERIENCE</h1></div>
-                                    <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A one-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
+                                    <p>With nearly two years of experience in web development, I have actively contributed to various group projects, honing my skills and gaining valuable insights. A two-month internship further enriched my understanding of the field. I am highly focused on achieving my goals in the dynamic world of web development.</p>
                                 </div>
 
                             </div>

@@ -111,7 +111,7 @@ const Animated = () => {
               </a>
             </div>
           </div>
-          <div className="fixed-button">
+          <div className="fixed-button lg:hidden">
             <a href=""><button className="p-2 font-bold text-black bg-white rounded-md border-arrow"><span ><FaArrowTurnUp className="animate-bounce" /></span></button></a>
           </div>
         </div>
